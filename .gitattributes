@@ -31,6 +31,7 @@ Dockerfile text eol=lf
 *.less text eol=lf
 *.lua text eof=lf
 *.md text eol=lf
+*.patch text eol=lf
 *.pjd text eol=lf
 *.proto text eol=lf
 *.rc text eol=lf
@@ -76,5 +77,3 @@ Dockerfile text eol=lf
 *.xcf binary
 *.xlsx binary
 *.zip binary
-####################
-* text eol=lf
