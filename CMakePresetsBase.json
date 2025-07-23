@@ -6,7 +6,8 @@
       "hidden": true,
       "binaryDir": "${sourceDir}/_bld-${presetName}",
       "cacheVariables": {
-        "XP_STEP": "patch"
+        "XP_STEP": "build",
+        "XP_BUILD_DEBUG": "OFF"
       }
     }
   ]
