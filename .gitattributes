@@ -76,3 +76,5 @@ Dockerfile text eol=lf
 *.xcf binary
 *.xlsx binary
 *.zip binary
+####################
+* text eol=lf
