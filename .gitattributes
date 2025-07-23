@@ -31,7 +31,6 @@ Dockerfile text eol=lf
 *.less text eol=lf
 *.lua text eof=lf
 *.md text eol=lf
-*.patch text eol=lf
 *.pjd text eol=lf
 *.proto text eol=lf
 *.rc text eol=lf
@@ -48,6 +47,8 @@ Dockerfile text eol=lf
 *.xsd text eol=lf
 *.yml text eol=lf
 .*rc text eol=lf
+####################
+*.patch -text
 ####################
 *.csproj.in text eol=crlf
 *.filters text eol=crlf
