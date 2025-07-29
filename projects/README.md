@@ -49,6 +49,7 @@
 |project|sub|description|version|repository|patch/diff|
 |-------|---|-----------|-------|----------|----------|
 |boost|[beast](http://boost.org/libs/beast 'Boost.Beast website')|HTTP and WebSocket built on Boost.Asio in C++11|1.76.0|[repo](https://github.com/boostorg/beast 'beast repo on github')|[diff](https://github.com/externpro/beast/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
+|boost|[build](http://boost.org/tools/build 'Boost Build website')|boost build|1.76.0|[repo](https://github.com/boostorg/build 'boost build repo on github')|[diff](https://github.com/externpro/build/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
 |boost|[dll](http://boost.org/libs/dll 'Boost.DLL website')|library for comfortable work with DLL and DSO|1.76.0|[repo](https://github.com/boostorg/dll 'dll repo on github')|[diff](https://github.com/externpro/dll/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
 |boost|[gil](http://boost.org/libs/gil 'boost gil website')|gil (generic image library)|1.76.0|[repo](https://github.com/boostorg/gil 'gil repo on github')|[diff](https://github.com/externpro/gil/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
 |boost|[graph](http://boost.org/libs/graph 'boost graph website')|a generic interface for traversing graphs, using C++ templates|1.76.0|[repo](https://github.com/boostorg/graph 'graph repo on github')|[diff](https://github.com/externpro/graph/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
