@@ -73,7 +73,7 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_2b9c3efa0f7bf9aa5d4919eaaf1ad243?https%3A%2F%2Fraw.githubusercontent.com%2Fsmanders%2Fexternpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_2b9c3efa0f7bf9aa5d4919eaaf1ad243?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
 depgraph_2b9c3efa0f7bf9aa5d4919eaaf1ad243
