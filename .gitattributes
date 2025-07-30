@@ -3,15 +3,22 @@ Dockerfile text eol=lf
 .gitattributes text eol=lf
 *.c text eol=lf
 *.cfg text eol=lf
+*.cls text eol=lf
 *.cmake text eol=lf
 *.conf text eol=lf
 *.cpp text eol=lf
 *.cs text eol=lf
 *.css text eol=lf
+*.csv text eol=lf
 *.cu text eol=lf
 *.cuh text eol=lf
+*.cuhpp text eol=lf
+*.cuhpp linguist-detectable
+*.cuhpp linguist-language=C++
 *.dae text eol=lf
 *.dockerfile text eol=lf
+*.dot text eol=lf
+*.eps text eol=lf
 *.fbs text eol=lf
 *.h text eol=lf
 *.h.in text eol=lf
@@ -31,6 +38,7 @@ Dockerfile text eol=lf
 *.scss text eol=lf
 *.sh text eol=lf
 *.svg text eol=lf
+*.tex text eol=lf
 *.ts text eol=lf
 *.txt text eol=lf
 *.type text eol=lf
@@ -39,6 +47,8 @@ Dockerfile text eol=lf
 *.xsd text eol=lf
 *.yml text eol=lf
 .*rc text eol=lf
+####################
+*.patch -text
 ####################
 *.csproj.in text eol=crlf
 *.filters text eol=crlf
@@ -50,7 +60,9 @@ Dockerfile text eol=lf
 *.vcproj text eol=crlf
 *.vcxproj text eol=crlf
 ####################
+*.bin binary
 *.bmp binary
+*.db binary
 *.doc binary
 *.eap binary
 *.gif binary

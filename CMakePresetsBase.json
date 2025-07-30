@@ -7,9 +7,7 @@
       "binaryDir": "${sourceDir}/_bld-${presetName}",
       "cacheVariables": {
         "XP_STEP": "build",
-        "XP_DEFAULT": "OFF",
-        "XP_PRO_BZIP2": "ON",
-        "XP_BUILD_DEBUG": "OFF"
+        "XP_BUILD_VERBOSE": "ON"
       }
     }
   ]

@@ -15,10 +15,10 @@ set(PRO_BOOST
   VER ${VER}
   GIT_ORIGIN ${REPO}
   GIT_TAG boost-${VER} # what to 'git checkout'
-  DLURL https://boostorg.jfrog.io/artifactory/main/release/${VER}/source/boost_${VER_}.tar.bz2
+  DLURL https://archives.boost.io/release/${VER}/source/boost_${VER_}.tar.bz2
   DLMD5 33334dd7f862e8ac9fe1cc7c6584fb6d
   DEPS_FUNC build_boost
-  SUBPRO boostbeast boostdll boostgil boostgraph boostinstall boostinterprocess boostprogram_options boostprogram_optionshpp boostregex boostunits
+  SUBPRO boostbeast boostbuild boostdll boostgil boostgraph boostinstall boostinterprocess boostprogram_options boostprogram_optionshpp boostregex boostunits
   )
 function(build_boost)
   if(NOT (XP_DEFAULT OR XP_PRO_BOOST))
@@ -66,6 +66,7 @@ function(build_boostb2)
     foreach(sub ${subs})
       xpListAppendIfDne(${bb_TARGETS} ${bb_PRO}_${sub})
     endforeach()
+    set(bb_DEPENDS ${bb_PRO} ${${bb_TARGETS}})
     xpListAppendIfDne(${bb_TARGETS} ${bb_PRO}.build)
     set(${bb_TARGETS} "${${bb_TARGETS}}" PARENT_SCOPE)
   endif()
@@ -79,7 +80,16 @@ function(build_boostb2)
   endif()
   if(MSVC)
     set(XP_CONFIGURE <SOURCE_DIR>/bootstrap.bat)
-    set(boost_b2 <SOURCE_DIR>/b2${CMAKE_EXECUTABLE_SUFFIX} toolset=msvc)
+    if(DEFINED MSVC_TOOLSET_VERSION)
+      list(APPEND XP_CONFIGURE vc${MSVC_TOOLSET_VERSION})
+      math(EXPR major ${MSVC_TOOLSET_VERSION}/10)
+      math(EXPR minor ${MSVC_TOOLSET_VERSION}%10)
+      set(boost_TOOLSET msvc-${major}.${minor})
+    else()
+      set(boost_TOOLSET msvc)
+    endif()
+    message(STATUS "XP_CONFIGURE: ${XP_CONFIGURE}")
+    set(boost_b2 <SOURCE_DIR>/b2${CMAKE_EXECUTABLE_SUFFIX} toolset=${boost_TOOLSET})
   else()
     set(XP_CONFIGURE <SOURCE_DIR>/bootstrap.sh)
     # NOTE: specifying the toolset (clang) here gives output similar to this:
@@ -105,7 +115,7 @@ function(build_boostb2)
     endif()
     set(boost_b2 <SOURCE_DIR>/b2 --ignore-site-config)
   endif()
-  ExternalProject_Add(${bb_PRO}.build DEPENDS ${bb_PRO}
+  ExternalProject_Add(${bb_PRO}.build DEPENDS ${bb_DEPENDS}
     DOWNLOAD_COMMAND "" DOWNLOAD_DIR ${NULL_DIR}
     SOURCE_DIR ${bb_BOOTSTRAP}
     CONFIGURE_COMMAND ${XP_CONFIGURE}
@@ -120,6 +130,13 @@ function(build_boostb2)
     INSTALL_COMMAND ${boost_b2} install --prefix=${boostbld_DIR} INSTALL_DIR ${NULL_DIR}
     )
   set_property(TARGET ${bb_PRO}.build PROPERTY FOLDER ${bld_folder})
+  if(XP_BUILD_VERBOSE)
+    message(STATUS "target ${bb_PRO}.build")
+    xpVerboseListing("[CONFIGURE]" "${XP_CONFIGURE}")
+    xpVerboseListing("[DEPENDS]" "${bb_DEPENDS}")
+  else()
+    message(STATUS "target ${bb_PRO}.build")
+  endif()
 endfunction()
 ####################
 function(stringToList stringlist lvalue)
