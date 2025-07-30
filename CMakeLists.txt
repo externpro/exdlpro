@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.31)
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/.devcontainer/cmake)
-project(exdlpro VERSION 24.05.1)
+project(exdlpro VERSION 25.01)
 set(XP_DOWNLOAD_URL "https://github.com/externpro/exdlpro/releases/download")
 set(XP_INSTALL_INFO "Installers located at https://github.com/externpro/exdlpro/releases")
 set(XP_AUTO_INCLUDE xpfunmac)
