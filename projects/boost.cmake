@@ -66,6 +66,7 @@ function(build_boostb2)
     foreach(sub ${subs})
       xpListAppendIfDne(${bb_TARGETS} ${bb_PRO}_${sub})
     endforeach()
+    set(bb_DEPENDS ${bb_PRO} ${${bb_TARGETS}})
     xpListAppendIfDne(${bb_TARGETS} ${bb_PRO}.build)
     set(${bb_TARGETS} "${${bb_TARGETS}}" PARENT_SCOPE)
   endif()
@@ -114,7 +115,7 @@ function(build_boostb2)
     endif()
     set(boost_b2 <SOURCE_DIR>/b2 --ignore-site-config)
   endif()
-  ExternalProject_Add(${bb_PRO}.build DEPENDS ${bb_PRO}
+  ExternalProject_Add(${bb_PRO}.build DEPENDS ${bb_DEPENDS}
     DOWNLOAD_COMMAND "" DOWNLOAD_DIR ${NULL_DIR}
     SOURCE_DIR ${bb_BOOTSTRAP}
     CONFIGURE_COMMAND ${XP_CONFIGURE}
@@ -129,6 +130,13 @@ function(build_boostb2)
     INSTALL_COMMAND ${boost_b2} install --prefix=${boostbld_DIR} INSTALL_DIR ${NULL_DIR}
     )
   set_property(TARGET ${bb_PRO}.build PROPERTY FOLDER ${bld_folder})
+  if(XP_BUILD_VERBOSE)
+    message(STATUS "target ${bb_PRO}.build")
+    xpVerboseListing("[CONFIGURE]" "${XP_CONFIGURE}")
+    xpVerboseListing("[DEPENDS]" "${bb_DEPENDS}")
+  else()
+    message(STATUS "target ${bb_PRO}.build")
+  endif()
 endfunction()
 ####################
 function(stringToList stringlist lvalue)

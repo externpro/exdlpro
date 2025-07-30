@@ -9,6 +9,7 @@
         "XP_STEP": "build",
         "XP_DEFAULT": "OFF",
         "XP_PRO_BOOST": "ON",
+        "XP_BUILD_VERBOSE": "ON",
         "XP_BUILD_DEBUG": "OFF"
       }
     }
