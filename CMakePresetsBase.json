@@ -8,7 +8,7 @@
       "cacheVariables": {
         "XP_STEP": "build",
         "XP_DEFAULT": "OFF",
-        "XP_PRO_BZIP2": "ON",
+        "XP_PRO_WX": "ON",
         "XP_BUILD_VERBOSE": "ON"
       }
     }
