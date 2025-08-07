@@ -1,12 +1,12 @@
-# externpro
+# exdlpro
 
-[![GitHub license](https://img.shields.io/github/license/smanders/externpro.svg)](https://github.com/smanders/externpro) [![GitHub release](https://img.shields.io/github/release/smanders/externpro.svg)](https://github.com/smanders/externpro)
+[![GitHub license](https://img.shields.io/github/license/externpro/exdlpro.svg)](https://github.com/externpro/exdlpro) [![GitHub release](https://img.shields.io/github/release/externpro/exdlpro.svg)](https://github.com/externpro/exdlpro)
 
 an extensible project to build (or copy pre-built) external (3rd-party) [projects](projects/README.md)
 
 ## description
 
-externpro supports options for [4 steps](https://github.com/smanders/externpro/blob/15.10.2/modules/macpro.cmake#L67-L72): mkpatch (make patch), download, patch, build -- with patch being the default option
+externpro supports options for [4 steps](https://github.com/externpro/externpro/blob/25.04/cmake/macpro.cmake#L62-L67): mkpatch (make patch), download, patch, build -- with patch being the default option
 
 externpro makes heavy use of cmake's [ExternalProject](http://www.kitware.com/media/html/BuildingExternalProjectsWithCMake2.8.html) module
 
@@ -28,15 +28,15 @@ for each project in the [projects directory](projects) which implements a patch_
 
 executing this step produces the source code in a patched state, suitable for debugging and stepping into the source
 
-if a developer already has externpro installed (using the installer produced by the build step below), they can simply run the patch step (on an externpro revision that matches their installed revision) and are now able to debug and step into third party code
+if a developer already has exdlpro installed (using the installer produced by the build step below), they can simply run the patch step (on an exdlpro revision that matches their installed revision) and are now able to debug and step into third party code
 
 ### build
 
-for each project in the [projects directory](projects) which implements a build_*project-name*() cmake function, the build step: executes the patch step then builds the project with the compiler (aka cmake generator) detected or specified at cmake-time of externpro
+for each project in the [projects directory](projects) which implements a build_*project-name*() cmake function, the build step: executes the patch step then builds the project with the compiler (aka cmake generator) detected or specified at cmake-time of exdlpro
 
-externpro also contains cmake options to specify different build platforms (32, 64 bit) and configurations (release, debug, multiple release runtime support with MSVC) - all of these platforms and configurations are built at build-time of externpro
+exdlpro (leveragin externpro cmake) also contains cmake options to specify different build platforms (32, 64 bit) and configurations (release, debug, multiple release runtime support with MSVC) - all of these platforms and configurations are built at build-time of exdlpro
 
-the `package` target of externpro will build an installer suitable for the OS on which you're building
+the `package` target of exdlpro will build an installer suitable for the OS on which you're building
 
 ## advantages
 
@@ -50,20 +50,27 @@ the `package` target of externpro will build an installer suitable for the OS on
 
 ## usage
 
-to build and use externpro from another project you can either create a *build version* of externpro or an *installed version*
+to build and use exdlpro from another project you can either create a *build version* of exdlpro or an *installed version*
 
 a build version is created by simply building externpro and an installed version involves building, making the package (aka installer), and installing
 
-one difference between a build version and an installed version is where the find script looks to find externpro - you can see the PATHS searched, in order, in the [find script](https://github.com/smanders/externpro/blob/20.10.1/modules/Findscript.cmake.in#L80-L88)
+one difference between a build version and an installed version is where the find script looks to find exdlpro - you can see the PATHS searched, in order, in the [find script](https://github.com/externpro/externpro/blob/25.04/cmake/Findscript.cmake.in#L27-L35)
 
 if you always plan to use an installed version the path to the source and build directories doesn't matter -- only the path where it is installed matters, unless you use an environment variable (examine the find script for suitable install locations)
 
-unless you have a reason to use an old release (`git checkout <tag>`) or have a reason to use a development version (`git checkout -b dev origin/dev` -- where development == not ready for release), you should be using the master branch (which is always the latest release)
-
+git initialization
 ```bash
-git clone https://github.com/smanders/externpro
-cd externpro
+git clone https://github.com/externpro/exdlpro
+cd exdlpro
 git submodule init
 git submodule update
+```
+start docker container on linux
+```bash
+./docker-compose.sh
+```
+leverage cmake-presets
+```bash
+cmake --preset=[Linux|Windows]
 cmake --workflow --preset=[Linux|Windows]
 ```
