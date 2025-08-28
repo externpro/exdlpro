@@ -72,10 +72,10 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_2b9c3efa0f7bf9aa5d4919eaaf1ad243?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_8677ce2061eaa5a6a425e0f27b35a2a2?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_2b9c3efa0f7bf9aa5d4919eaaf1ad243
+depgraph_8677ce2061eaa5a6a425e0f27b35a2a2
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
@@ -86,8 +86,6 @@ digraph GG {
   azmq -> libzmq;
   azmq -> boost;
   boost [shape=diamond];
-  boost -> bzip2;
-  bzip2 [shape=diamond];
   cares [label="c-ares" shape=diamond];
   ceres [shape=diamond];
   ceres -> eigen;
@@ -134,5 +132,5 @@ digraph GG {
   zmqpp [shape=diamond];
   zmqpp -> libzmq;
 }
-depgraph_2b9c3efa0f7bf9aa5d4919eaaf1ad243
+depgraph_8677ce2061eaa5a6a425e0f27b35a2a2
 </details>
