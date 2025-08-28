@@ -6,7 +6,6 @@
 |[APR](http://apr.apache.org/ 'Apache Portable Runtime Project website')|[open](http://www.apache.org/licenses/LICENSE-2.0.html 'Apache 2.0')|Apache Portable Runtime project|1.5.2|[repo](https://github.com/apache/apr 'apr repo on github')|[diff](https://github.com/externpro/apr/compare/apache:1.5.2...xp1.5.2 'patch/diff')|
 |[azmq](https://zeromq.org/ 'ZeroMQ website')|[open](https://github.com/zeromq/azmq/blob/master/LICENSE-BOOST_1_0 'Boost Software License 1.0')|provides Boost Asio style bindings for ZeroMQ|21.12.05|[repo](https://github.com/zeromq/azmq 'zeromq/azmq repo on github')|[diff](https://github.com/externpro/azmq/compare/zeromq:e0058a38976399006f535a9010d29e763b43fcd8...xp21.12.05 'patch/diff')|
 |[boost](http://www.boost.org/ 'Boost website')|[open](http://www.boost.org/users/license.html 'Boost Software License')|libraries that give C++ a boost|1.76.0|[repo](https://github.com/boostorg/boost 'boost repo on github')|none|
-|[bzip2](https://en.wikipedia.org/wiki/Bzip2 'bzip2 on wikipedia')|[open](https://spdx.org/licenses/bzip2-1.0.6.html 'bzip2 BSD-style license')|lossless block-sorting data compression library|1.0.6|[repo](https://github.com/externpro/bzip2 'forked bzip2 repo on github')|[diff](https://github.com/externpro/bzip2/compare/v1.0.6...xp1.0.6 'patch/diff')|
 |[c-ares](http://c-ares.haxx.se/ 'c-ares website')|[open](http://c-ares.haxx.se/license.html 'c-ares license: MIT license')|C library for asynchronous DNS requests (including name resolves)|1.18.1|[repo](https://github.com/c-ares/c-ares 'c-ares repo on github')|[diff](https://github.com/externpro/c-ares/compare/c-ares:cares-1_18_1...xp-1_18_1 'patch/diff')|
 |[ceres-solver](http://ceres-solver.org 'Ceres Solver website')|[open](http://ceres-solver.org/license.html 'New BSD License')|C++ library for modeling and solving large, complicated optimization problems|1.14.0|[repo](https://github.com/ceres-solver/ceres-solver 'ceres-solver repo on github')|[diff](https://github.com/externpro/ceres-solver/compare/ceres-solver:1.14.0...xp1.14.0 'patch/diff')|
 |[cppzmq](https://zeromq.org/ 'ZeroMQ website')|[open](http://wiki.zeromq.org/area:licensing 'GNU LGPL plus static linking exception')|header-only C++ binding for libzmq|4.7.1|[repo](https://github.com/zeromq/cppzmq 'zeromq/cppzmq repo on github')|[diff](https://github.com/externpro/cppzmq/compare/zeromq:v4.7.1...xp4.7.1 'patch/diff')|
@@ -73,10 +72,10 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_2b9c3efa0f7bf9aa5d4919eaaf1ad243?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_8677ce2061eaa5a6a425e0f27b35a2a2?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_2b9c3efa0f7bf9aa5d4919eaaf1ad243
+depgraph_8677ce2061eaa5a6a425e0f27b35a2a2
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
@@ -87,8 +86,6 @@ digraph GG {
   azmq -> libzmq;
   azmq -> boost;
   boost [shape=diamond];
-  boost -> bzip2;
-  bzip2 [shape=diamond];
   cares [label="c-ares" shape=diamond];
   ceres [shape=diamond];
   ceres -> eigen;
@@ -135,5 +132,5 @@ digraph GG {
   zmqpp [shape=diamond];
   zmqpp -> libzmq;
 }
-depgraph_2b9c3efa0f7bf9aa5d4919eaaf1ad243
+depgraph_8677ce2061eaa5a6a425e0f27b35a2a2
 </details>

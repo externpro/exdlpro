@@ -11,7 +11,6 @@ set(PRO_BOOST
   DESC "libraries that give C++ a boost"
   REPO "repo" ${REPO} "boost repo on github"
   GRAPH GRAPH_NODE boost
-  BUILD_DEPS bzip2
   VER ${VER}
   GIT_ORIGIN ${REPO}
   GIT_TAG boost-${VER} # what to 'git checkout'
@@ -164,15 +163,16 @@ function(userConfigJam jamFile)
     list(FILTER incDir INCLUDE REGEX "zlib$") # include directory that ends with zlib
     set(cfgContents "using zlib : ${ZLIB_VER} : <search>${libDir} <name>${libName} <include>${incDir} ;\n")
   endif()
-  # TRICKY: need bzip2 include directory at cmake-time (before it's built)
-  # so can't use xpGetPkgVar, xpFindPkg, etc - this complicates having multiple versions
-  # of bzip2 (boost will have to choose a version here)
-  xpGetArgValue(${PRO_BZIP2} ARG VER VALUE bzip2Ver)
-  set(bzip2Inc ${STAGE_DIR}/include/bzip2_${bzip2Ver}/bzip2)
-  include(${STAGE_DIR}/share/cmake/xpopts.cmake)
-  xpSetPostfix()
-  set(bzip2Name bz2${CMAKE_RELEASE_POSTFIX})
-  set(cfgContents "${cfgContents}using bzip2 : ${bzip2Ver} : <search>${STAGE_DIR}/lib <name>${bzip2Name} <include>${bzip2Inc} ;\n")
+  xpFindPkg(PKGS bzip2)
+  if(TARGET xpro::bz2)
+    get_target_property(loc xpro::bz2 IMPORTED_LOCATION_RELEASE)
+    get_filename_component(libDir ${loc} DIRECTORY)
+    get_filename_component(libName ${loc} NAME)
+    string(REPLACE "${CMAKE_STATIC_LIBRARY_PREFIX}" "" libName ${libName})
+    string(REPLACE "${CMAKE_STATIC_LIBRARY_SUFFIX}" "" libName ${libName})
+    get_target_property(incDir xpro::bz2 INTERFACE_INCLUDE_DIRECTORIES)
+    set(cfgContents "${cfgContents}using bzip2 : ${BZIP2_VER} : <search>${libDir} <name>${libName} <include>${incDir}/bzip2 ;\n")
+  endif()
   file(WRITE ${cfgFile} "${cfgContents}")
   # Boost.Python build
   find_package(Python "3.6...<3.10" COMPONENTS Interpreter Development)
