@@ -2,6 +2,7 @@
   "version": 8,
   "include": [
     ".devcontainer/cmake/presets/xpLinuxMakefilesRelease.json",
+    ".devcontainer/cmake/presets/xpDarwinMakefilesRelease.json",
     ".devcontainer/cmake/presets/xpWindowsVs2022.json"
   ]
 }
