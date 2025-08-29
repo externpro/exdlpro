@@ -1,5 +1,5 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index ceda71b1..774778f8 100644
+index ceda71b1..ec763278 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -1,4 +1,4 @@
@@ -27,7 +27,7 @@ index ceda71b1..774778f8 100644
  set(LIB_MAJOR_VERSION "1")
  set(LIB_MINOR_VERSION "1")
  set(LIB_PATCH_VERSION "0")
-@@ -93,19 +100,23 @@ elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
+@@ -93,25 +100,29 @@ elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
  endif()
  
  #add extra search paths for libraries and includes
@@ -61,6 +61,13 @@ index ceda71b1..774778f8 100644
  if(RAPIDJSON_BUILD_DOC)
      add_subdirectory(doc)
  endif()
+ 
+ add_custom_target(travis_doc)
+-add_custom_command(TARGET travis_doc
++add_custom_command(TARGET travis_doc POST_BUILD
+     COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/travis-doxygen.sh)
+ 
+ if(RAPIDJSON_BUILD_EXAMPLES)
 @@ -133,11 +144,13 @@ IF (UNIX OR CYGWIN)
                    ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}.pc
                    @ONLY)
