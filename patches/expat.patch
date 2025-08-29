@@ -1,17 +1,17 @@
 diff --git a/expat/CMakeLists.txt b/expat/CMakeLists.txt
-index 504d087a..233adb29 100644
+index 504d087a..0614f85d 100644
 --- a/expat/CMakeLists.txt
 +++ b/expat/CMakeLists.txt
 @@ -1,9 +1,18 @@
  # This file is copyrighted under the BSD-license for buildsystem files of KDE
  # copyright 2010, Patrick Spendrin <ps_ml@gmx.de>
  
-+cmake_minimum_required(VERSION 2.6...3.21)
++cmake_minimum_required(VERSION 2.6...3.31)
  project(expat)
  
 -cmake_minimum_required(VERSION 2.6)
-+include(flags OPTIONAL)
 +include(GNUInstallDirs)
++include(xpflags)
 +if(DEFINED XP_NAMESPACE)
 +  set(XP_OPT_INSTALL EXCLUDE_FROM_ALL)
 +  set(nameSpace NAMESPACE ${XP_NAMESPACE}::)

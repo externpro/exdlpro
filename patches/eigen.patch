@@ -1,9 +1,9 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 2bfb6d560..a294ddc01 100644
+index 2bfb6d560..81c1063d9 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -1,7 +1,6 @@
-+cmake_minimum_required(VERSION 2.8.5...3.21)
++cmake_minimum_required(VERSION 2.8.5...3.31)
  project(Eigen3)
  
 -cmake_minimum_required(VERSION 2.8.5)
@@ -11,7 +11,15 @@ index 2bfb6d560..a294ddc01 100644
  # guard against in-source builds
  
  if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
-@@ -398,8 +397,11 @@ else()
+@@ -64,6 +63,7 @@ endif(EIGEN_HG_CHANGESET)
+ 
+ include(CheckCXXCompilerFlag)
+ include(GNUInstallDirs)
++include(xpflags)
+ 
+ set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
+ 
+@@ -398,8 +398,11 @@ else()
        CACHE PATH "The directory relative to CMAKE_PREFIX_PATH where Eigen header files are installed"
        )
  endif()
@@ -24,7 +32,7 @@ index 2bfb6d560..a294ddc01 100644
      CACHE PATH "The directory relative to CMAKE_PREFIX_PATH where Eigen3Config.cmake is installed"
      )
  set(PKGCONFIG_INSTALL_DIR
-@@ -540,6 +542,7 @@ if (NOT CMAKE_VERSION VERSION_LESS 3.0)
+@@ -540,6 +543,7 @@ if (NOT CMAKE_VERSION VERSION_LESS 3.0)
    target_include_directories (eigen INTERFACE
      $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
      $<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}>

@@ -1,13 +1,13 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
 new file mode 100644
-index 0000000..f532267
+index 0000000..9f96ab1
 --- /dev/null
 +++ b/CMakeLists.txt
 @@ -0,0 +1,35 @@
-+cmake_minimum_required(VERSION 3.12)
++cmake_minimum_required(VERSION 3.31)
 +project(fecpp)
 +include(GNUInstallDirs)
-+include(flags)
++include(xpflags)
 +set(lib_name ${PROJECT_NAME})
 +#######################################
 +set(${lib_name}_libsrcs

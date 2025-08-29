@@ -1,5 +1,5 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 0e2cc7a..d5e7cff 100644
+index 0e2cc7a..7d571db 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -11,9 +11,10 @@
@@ -7,10 +7,10 @@ index 0e2cc7a..d5e7cff 100644
  
  
 -cmake_minimum_required(VERSION 2.8.12)
-+cmake_minimum_required(VERSION 2.8.12...3.21)
++cmake_minimum_required(VERSION 2.8.12...3.31)
  project(zmqpp)
  enable_testing()
-+include(flags OPTIONAL)
++include(xpflags)
  
  # prepare C++11
  set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")

@@ -1,10 +1,10 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index ceda71b1..793a2c21 100644
+index ceda71b1..a443c8db 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -1,4 +1,4 @@
 -CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
-+CMAKE_MINIMUM_REQUIRED(VERSION 2.8...3.24)
++CMAKE_MINIMUM_REQUIRED(VERSION 2.8...3.31)
  if(POLICY CMP0025)
    # detect Apple's Clang
    cmake_policy(SET CMP0025 NEW)
@@ -13,7 +13,7 @@ index ceda71b1..793a2c21 100644
  PROJECT(RapidJSON CXX)
  
 +include(GNUInstallDirs)
-+include(flags OPTIONAL)
++include(xpflags)
 +if(DEFINED XP_NAMESPACE)
 +  set(nameSpace NAMESPACE ${XP_NAMESPACE}::)
 +  set(XP_OPT_INSTALL EXCLUDE_FROM_ALL)

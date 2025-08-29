@@ -2086,14 +2086,14 @@ index 0000000..41bf520
 +set_wxtarget_properties(${lib_name})
 diff --git a/wx.cmake b/wx.cmake
 new file mode 100644
-index 0000000..2843ec9
+index 0000000..6c68c8c
 --- /dev/null
 +++ b/wx.cmake
 @@ -0,0 +1,164 @@
 +set(wxroot ${CMAKE_SOURCE_DIR})
 +set(CMAKE_MODULE_PATH ${wxroot}/build/cmake ${CMAKE_MODULE_PATH})
 +include(GNUInstallDirs)
-+include(flags OPTIONAL)
++include(xpflags)
 +set_property(GLOBAL PROPERTY USE_FOLDERS ON) # enables MSVC Solution Folders
 +add_definitions(-D_LIB)
 +# reset any postfix setting done previously
@@ -2127,7 +2127,7 @@ index 0000000..2843ec9
 +    xpGetCompilerPrefix(toolset)
 +  endif()
 +  set(unicode u)
-+  if(XP_BUILD_STATIC_RT) # from flags.cmake include, xpCommonFlags, xpopts.cmake
++  if(XP_BUILD_STATIC_RT) # from wxflags.cmake include, xpCommonFlags, xpopts.cmake
 +    set(static s)
 +  endif()
 +  if(${target} MATCHES "base")

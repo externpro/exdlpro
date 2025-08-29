@@ -1,13 +1,13 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
 new file mode 100644
-index 0000000..bc03453
+index 0000000..679bbfd
 --- /dev/null
 +++ b/CMakeLists.txt
 @@ -0,0 +1,33 @@
-+cmake_minimum_required(VERSION 3.20)
++cmake_minimum_required(VERSION 3.31)
 +project(shapelib)
 +include(GNUInstallDirs)
-+include(flags OPTIONAL)
++include(xpflags)
 +set(lib_name shape)
 +#######################################
 +set(${lib_name}_libsrcs

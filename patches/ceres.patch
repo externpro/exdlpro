@@ -1,5 +1,5 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 02c72b5c..bbdf513d 100644
+index 02c72b5c..9ac31785 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -29,13 +29,8 @@
@@ -13,7 +13,7 @@ index 02c72b5c..bbdf513d 100644
 -if (POLICY CMP0042)
 -  cmake_policy(SET CMP0042 NEW)
 -endif()
-+cmake_minimum_required(VERSION 3.5)
++cmake_minimum_required(VERSION 2.8.0...3.31)
 +cmake_policy(VERSION 3.5)
  
  project(Ceres C CXX)
@@ -23,7 +23,7 @@ index 02c72b5c..bbdf513d 100644
  read_ceres_version_from_source(${Ceres_SOURCE_DIR})
  
 +# externpro
-+include(flags OPTIONAL) # overwrites POSTFIX defines
++include(xpflags) # overwrites POSTFIX defines
 +include(GNUInstallDirs)
 +
  enable_testing()
