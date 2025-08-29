@@ -241,7 +241,7 @@ function(build_boostlibs)
     else()
       message(FATAL_ERROR "boost.cmake: compiler support lacking: ${CMAKE_CXX_COMPILER_ID}")
     endif()
-    include(${MODULES_DIR}/flags.cmake) # populates CMAKE_*_FLAGS
+    include(${MODULES_DIR}/xpflags.cmake) # populates CMAKE_*_FLAGS
     if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
       # clang: warning: argument unused during compilation: '-arch x86_64'
       xpStringRemoveIfExists(CMAKE_CXX_FLAGS "-arch x86_64")
