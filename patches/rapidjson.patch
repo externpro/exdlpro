@@ -1,5 +1,5 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index ceda71b1..a443c8db 100644
+index ceda71b1..774778f8 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -1,4 +1,4 @@
@@ -8,7 +8,12 @@ index ceda71b1..a443c8db 100644
  if(POLICY CMP0025)
    # detect Apple's Clang
    cmake_policy(SET CMP0025 NEW)
-@@ -11,6 +11,13 @@ SET(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules)
+@@ -7,10 +7,17 @@ if(POLICY CMP0054)
+   cmake_policy(SET CMP0054 NEW)
+ endif()
+ 
+-SET(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules)
++list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules)
  
  PROJECT(RapidJSON CXX)
  
