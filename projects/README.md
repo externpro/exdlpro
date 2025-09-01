@@ -9,7 +9,6 @@
 |[c-ares](http://c-ares.haxx.se/ 'c-ares website')|[open](http://c-ares.haxx.se/license.html 'c-ares license: MIT license')|C library for asynchronous DNS requests (including name resolves)|1.18.1|[repo](https://github.com/c-ares/c-ares 'c-ares repo on github')|[diff](https://github.com/externpro/c-ares/compare/c-ares:cares-1_18_1...xp-1_18_1 'patch/diff')|
 |[cppzmq](https://zeromq.org/ 'ZeroMQ website')|[open](http://wiki.zeromq.org/area:licensing 'GNU LGPL plus static linking exception')|header-only C++ binding for libzmq|4.7.1|[repo](https://github.com/zeromq/cppzmq 'zeromq/cppzmq repo on github')|[diff](https://github.com/externpro/cppzmq/compare/zeromq:v4.7.1...xp4.7.1 'patch/diff')|
 |[cURL](http://curl.haxx.se/libcurl/ 'libcurl website')|[open](http://curl.haxx.se/docs/copyright.html 'curl license: MIT/X derivate license')|the multiprotocol file transfer library|7.80.0|[repo](https://github.com/curl/curl 'curl repo on github')|[diff](https://github.com/externpro/curl/compare/curl:curl-7_80_0...xp-7_80_0 'patch/diff')|
-|[Eigen](http://eigen.tuxfamily.org/ 'Eigen website')|[open](http://eigen.tuxfamily.org/index.php?title=Main_Page#License 'Eigen license: MPL2 (aka Mozilla Public License)')|C++ template library for linear algebra|3.3.7|[repo](https://gitlab.com/libeigen/eigen.git 'eigen repo on gitlab')|[diff](https://github.com/externpro/eigen/compare/3.3.7...xp3.3.7 'patch/diff')|
 |[Expat](https://libexpat.github.io 'Expat website')|[open](https://github.com/libexpat/libexpat/blob/R_2_2_5/expat/COPYING 'Expat License (MIT/X Consortium license)')|a stream-oriented XML parser library written in C|2.2.5|[repo](https://github.com/libexpat/libexpat 'libexpat repo on github')|[diff](https://github.com/externpro/libexpat/compare/libexpat:R_2_2_5...xp2.2.5 'patch/diff')|
 |[fecpp](http://www.randombit.net/code/fecpp/ 'C++ forward error correction with SIMD optimizations')|[open](http://www.randombit.net/code/fecpp/ 'BSD License')|fecpp is a Forward Error Correction Library|0.9|[repo](https://github.com/randombit/fecpp 'fecpp repo on github')|[diff](https://github.com/externpro/fecpp/compare/v0.9...xp0.9 'patch/diff')|
 |[ffmpeg](https://www.ffmpeg.org/ 'ffmpeg website')|[LGPL](https://www.ffmpeg.org/legal.html 'Lesser GPL v2.1')|pre-built (MSW-only) complete, cross-platform solution to record, convert and stream audio and video|2.6.2.1|[repo](https://github.com/externpro/ffmpegBin 'ffmpeg binary repo on github')|[diff](https://github.com/externpro/ffmpegBin/compare/v2.6.2.1...xp2.6.2.1 'patch/diff')|
@@ -71,10 +70,10 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_616c303c5bbe3a4b8fcc4ca9dffd9336?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_dd55b6ff823f1d9bb675e7549a124617?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_616c303c5bbe3a4b8fcc4ca9dffd9336
+depgraph_dd55b6ff823f1d9bb675e7549a124617
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
@@ -95,7 +94,6 @@ digraph GG {
   curl [shape=diamond];
   curl -> libssh2;
   curl -> cares;
-  eigen [shape=diamond];
   expat [shape=diamond];
   fecpp [shape=diamond];
   fecpp -> boost;
@@ -129,5 +127,5 @@ digraph GG {
   zmqpp [shape=diamond];
   zmqpp -> libzmq;
 }
-depgraph_616c303c5bbe3a4b8fcc4ca9dffd9336
+depgraph_dd55b6ff823f1d9bb675e7549a124617
 </details>
