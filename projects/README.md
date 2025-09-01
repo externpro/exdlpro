@@ -7,7 +7,6 @@
 |[azmq](https://zeromq.org/ 'ZeroMQ website')|[open](https://github.com/zeromq/azmq/blob/master/LICENSE-BOOST_1_0 'Boost Software License 1.0')|provides Boost Asio style bindings for ZeroMQ|21.12.05|[repo](https://github.com/zeromq/azmq 'zeromq/azmq repo on github')|[diff](https://github.com/externpro/azmq/compare/zeromq:e0058a38976399006f535a9010d29e763b43fcd8...xp21.12.05 'patch/diff')|
 |[boost](http://www.boost.org/ 'Boost website')|[open](http://www.boost.org/users/license.html 'Boost Software License')|libraries that give C++ a boost|1.76.0|[repo](https://github.com/boostorg/boost 'boost repo on github')|none|
 |[c-ares](http://c-ares.haxx.se/ 'c-ares website')|[open](http://c-ares.haxx.se/license.html 'c-ares license: MIT license')|C library for asynchronous DNS requests (including name resolves)|1.18.1|[repo](https://github.com/c-ares/c-ares 'c-ares repo on github')|[diff](https://github.com/externpro/c-ares/compare/c-ares:cares-1_18_1...xp-1_18_1 'patch/diff')|
-|[ceres-solver](http://ceres-solver.org 'Ceres Solver website')|[open](http://ceres-solver.org/license.html 'New BSD License')|C++ library for modeling and solving large, complicated optimization problems|1.14.0|[repo](https://github.com/ceres-solver/ceres-solver 'ceres-solver repo on github')|[diff](https://github.com/externpro/ceres-solver/compare/ceres-solver:1.14.0...xp1.14.0 'patch/diff')|
 |[cppzmq](https://zeromq.org/ 'ZeroMQ website')|[open](http://wiki.zeromq.org/area:licensing 'GNU LGPL plus static linking exception')|header-only C++ binding for libzmq|4.7.1|[repo](https://github.com/zeromq/cppzmq 'zeromq/cppzmq repo on github')|[diff](https://github.com/externpro/cppzmq/compare/zeromq:v4.7.1...xp4.7.1 'patch/diff')|
 |[cURL](http://curl.haxx.se/libcurl/ 'libcurl website')|[open](http://curl.haxx.se/docs/copyright.html 'curl license: MIT/X derivate license')|the multiprotocol file transfer library|7.80.0|[repo](https://github.com/curl/curl 'curl repo on github')|[diff](https://github.com/externpro/curl/compare/curl:curl-7_80_0...xp-7_80_0 'patch/diff')|
 |[Eigen](http://eigen.tuxfamily.org/ 'Eigen website')|[open](http://eigen.tuxfamily.org/index.php?title=Main_Page#License 'Eigen license: MPL2 (aka Mozilla Public License)')|C++ template library for linear algebra|3.3.7|[repo](https://gitlab.com/libeigen/eigen.git 'eigen repo on gitlab')|[diff](https://github.com/externpro/eigen/compare/3.3.7...xp3.3.7 'patch/diff')|
@@ -72,10 +71,10 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_8677ce2061eaa5a6a425e0f27b35a2a2?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_616c303c5bbe3a4b8fcc4ca9dffd9336?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_8677ce2061eaa5a6a425e0f27b35a2a2
+depgraph_616c303c5bbe3a4b8fcc4ca9dffd9336
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
@@ -87,8 +86,6 @@ digraph GG {
   azmq -> boost;
   boost [shape=diamond];
   cares [label="c-ares" shape=diamond];
-  ceres [shape=diamond];
-  ceres -> eigen;
   clang [shape=box];
   clang -> llvm;
   clangformat [shape=box];
@@ -132,5 +129,5 @@ digraph GG {
   zmqpp [shape=diamond];
   zmqpp -> libzmq;
 }
-depgraph_8677ce2061eaa5a6a425e0f27b35a2a2
+depgraph_616c303c5bbe3a4b8fcc4ca9dffd9336
 </details>
