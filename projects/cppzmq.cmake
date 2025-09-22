@@ -10,7 +10,7 @@ set(PRO_CPPZMQ
   LICENSE "open" http://wiki.zeromq.org/area:licensing "GNU LGPL plus static linking exception"
   DESC "header-only C++ binding for libzmq"
   REPO "repo" ${REPO} "zeromq/cppzmq repo on github"
-  GRAPH BUILD_DEPS libzmq
+  GRAPH
   VER ${VER}
   GIT_ORIGIN ${FORK}
   GIT_UPSTREAM ${REPO}

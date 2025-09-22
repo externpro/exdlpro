@@ -11,7 +11,7 @@ set(PRO_ZMQPP
   LICENSE "open" ${REPO}/blob/develop/LICENSE "Mozilla Public License 2.0"
   DESC "high-level binding for libzmq"
   REPO "repo" ${REPO} "zeromq/zmqpp repo on github"
-  GRAPH BUILD_DEPS libzmq
+  GRAPH
   VER ${VER}
   GIT_ORIGIN ${FORK}
   GIT_UPSTREAM ${REPO}

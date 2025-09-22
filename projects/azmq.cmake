@@ -11,7 +11,7 @@ set(PRO_AZMQ
   LICENSE "open" ${REPO}/blob/master/LICENSE-BOOST_1_0 "Boost Software License 1.0"
   DESC "provides Boost Asio style bindings for ZeroMQ"
   REPO "repo" ${REPO} "zeromq/azmq repo on github"
-  GRAPH BUILD_DEPS libzmq boost
+  GRAPH BUILD_DEPS boost
   VER ${VER}
   GIT_ORIGIN ${FORK}
   GIT_UPSTREAM ${REPO}
