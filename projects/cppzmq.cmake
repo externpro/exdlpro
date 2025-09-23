@@ -27,7 +27,6 @@ function(build_cppzmq)
   if(NOT (XP_DEFAULT OR XP_PRO_CPPZMQ))
     return()
   endif()
-  xpBuildDeps(depTgts ${PRO_CPPZMQ})
   xpGetArgValue(${PRO_CPPZMQ} ARG NAME VALUE NAME)
   xpGetArgValue(${PRO_CPPZMQ} ARG VER VALUE VER)
   set(XP_CONFIGURE
@@ -47,5 +46,5 @@ function(build_cppzmq)
     ${STAGE_DIR}/share/cmake/usexp-${NAME}-config.cmake
     @ONLY NEWLINE_STYLE LF
     )
-  xpCmakeBuild(${NAME} "${depTgts}" "${XP_CONFIGURE}")
+  xpCmakeBuild(${NAME} "" "${XP_CONFIGURE}")
 endfunction()
