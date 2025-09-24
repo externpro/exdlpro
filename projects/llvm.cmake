@@ -19,6 +19,9 @@ set(PRO_LLVM
   )
 ########################################
 function(build_llvm)
+  if(APPLE AND NOT XP_PRO_LLVM)
+    return()
+  endif()
   if(NOT (XP_DEFAULT OR XP_PRO_LLVM))
     return()
   endif()

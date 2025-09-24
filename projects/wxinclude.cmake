@@ -27,6 +27,9 @@ set(PRO_WXINCLUDE
   )
 ########################################
 function(build_wxinclude)
+  if(APPLE AND NOT XP_PRO_WXINCLUDE)
+    return()
+  endif()
   if(NOT (XP_DEFAULT OR XP_PRO_WXINCLUDE))
     return()
   endif()
