@@ -67,18 +67,15 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_dd55b6ff823f1d9bb675e7549a124617?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_b7413f3f247fc82478a3bd5ffc74efa3?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_dd55b6ff823f1d9bb675e7549a124617
+depgraph_b7413f3f247fc82478a3bd5ffc74efa3
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
-  activemqcpp -> apr;
   activemqcpp -> openssl;
-  apr [shape=diamond];
   azmq [shape=diamond];
-  azmq -> libzmq;
   azmq -> boost;
   boost [shape=diamond];
   cares [label="c-ares" shape=diamond];
@@ -87,7 +84,6 @@ digraph GG {
   clangformat [shape=box];
   clangformat -> clang;
   cppzmq [shape=diamond];
-  cppzmq -> libzmq;
   curl [shape=diamond];
   curl -> libssh2;
   curl -> cares;
@@ -106,15 +102,12 @@ digraph GG {
   libstrophe [shape=diamond];
   libstrophe -> expat;
   libstrophe -> openssl;
-  libzmq [shape=diamond];
-  libzmq -> sodium;
   llvm [shape=box];
   openh264 [shape=diamond];
   openh264 -> yasm;
   openssl [shape=diamond];
   openssl -> opensslasm;
   opensslasm [shape=diamond];
-  sodium [shape=diamond];
   wx [shape=diamond];
   wxinclude [shape=box];
   wxinclude -> boost;
@@ -122,7 +115,6 @@ digraph GG {
   wxx -> wx;
   yasm [shape=box];
   zmqpp [shape=diamond];
-  zmqpp -> libzmq;
 }
-depgraph_dd55b6ff823f1d9bb675e7549a124617
+depgraph_b7413f3f247fc82478a3bd5ffc74efa3
 </details>
