@@ -7,9 +7,8 @@
       "binaryDir": "${sourceDir}/_bld-${presetName}",
       "cacheVariables": {
         "XP_STEP": "build",
-        "XP_DEFAULT": "OFF",
+        "XP_DEFAULT": "ON",
         "XP_BUILD_DEBUG": "ON",
-        "XP_PRO_ZMQPP": "ON",
         "XP_BUILD_VERBOSE": "ON"
       }
     }
