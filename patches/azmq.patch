@@ -1,14 +1,14 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 42ace9a..1258649 100644
+index 42ace9a..61a1d46 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -1,7 +1,8 @@
 -cmake_minimum_required(VERSION 2.8)
-+cmake_minimum_required(VERSION 3.12)
++cmake_minimum_required(VERSION 3.31)
  project(azmq)
  
  include(AzmqCPack.cmake)
-+include(flags OPTIONAL)
++include(xpflags)
  
  set(CMAKE_CXX_STANDARD 11)
  set(CMAKE_CXX_STANDARD_REQUIRED ON)

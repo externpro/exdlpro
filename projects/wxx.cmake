@@ -20,6 +20,9 @@ set(PRO_WXX
   )
 ########################################
 function(build_wxx)
+  if(APPLE AND NOT XP_PRO_WXX)
+    return()
+  endif()
   if(NOT (XP_DEFAULT OR XP_PRO_WXX))
     return()
   endif()

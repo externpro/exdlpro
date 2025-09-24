@@ -28,6 +28,9 @@ set(PRO_GEOTIFF
   )
 ########################################
 function(build_geotiff)
+  if(APPLE AND NOT XP_PRO_GEOTIFF)
+    return()
+  endif()
   if(NOT (XP_DEFAULT OR XP_PRO_GEOTIFF))
     return()
   endif()

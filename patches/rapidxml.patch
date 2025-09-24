@@ -1,13 +1,13 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
 new file mode 100644
-index 0000000..1a6f0de
+index 0000000..42ffc5b
 --- /dev/null
 +++ b/CMakeLists.txt
 @@ -0,0 +1,30 @@
-+cmake_minimum_required(VERSION 3.24)
++cmake_minimum_required(VERSION 3.31)
 +project(rapidxml)
 +include(GNUInstallDirs)
-+include(flags OPTIONAL)
++include(xpflags)
 +set(lib_name ${PROJECT_NAME})
 +########################################
 +set(root_srcs

@@ -10,7 +10,7 @@ set(PRO_CPPZMQ
   LICENSE "open" http://wiki.zeromq.org/area:licensing "GNU LGPL plus static linking exception"
   DESC "header-only C++ binding for libzmq"
   REPO "repo" ${REPO} "zeromq/cppzmq repo on github"
-  GRAPH BUILD_DEPS libzmq
+  GRAPH
   VER ${VER}
   GIT_ORIGIN ${FORK}
   GIT_UPSTREAM ${REPO}
@@ -27,7 +27,6 @@ function(build_cppzmq)
   if(NOT (XP_DEFAULT OR XP_PRO_CPPZMQ))
     return()
   endif()
-  xpBuildDeps(depTgts ${PRO_CPPZMQ})
   xpGetArgValue(${PRO_CPPZMQ} ARG NAME VALUE NAME)
   xpGetArgValue(${PRO_CPPZMQ} ARG VER VALUE VER)
   set(XP_CONFIGURE
@@ -47,5 +46,5 @@ function(build_cppzmq)
     ${STAGE_DIR}/share/cmake/usexp-${NAME}-config.cmake
     @ONLY NEWLINE_STYLE LF
     )
-  xpCmakeBuild(${NAME} "${depTgts}" "${XP_CONFIGURE}")
+  xpCmakeBuild(${NAME} "" "${XP_CONFIGURE}")
 endfunction()

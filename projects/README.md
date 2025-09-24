@@ -3,20 +3,16 @@
 |project|license|description|version|repository|patch/diff|
 |-------|-------|-----------|-------|----------|----------|
 |[ActiveMQ-CPP](http://activemq.apache.org/cms/ 'ActiveMQ CMS website')|[open](http://www.apache.org/licenses/LICENSE-2.0.html 'Apache 2.0')|ActiveMQ C++ Messaging Service (CMS) client library|3.9.5|[repo](https://github.com/apache/activemq-cpp 'activemq-cpp repo on github')|[diff](https://github.com/externpro/activemq-cpp/compare/apache:activemq-cpp-3.9.5...xp-3.9.5 'patch/diff')|
-|[APR](http://apr.apache.org/ 'Apache Portable Runtime Project website')|[open](http://www.apache.org/licenses/LICENSE-2.0.html 'Apache 2.0')|Apache Portable Runtime project|1.5.2|[repo](https://github.com/apache/apr 'apr repo on github')|[diff](https://github.com/externpro/apr/compare/apache:1.5.2...xp1.5.2 'patch/diff')|
 |[azmq](https://zeromq.org/ 'ZeroMQ website')|[open](https://github.com/zeromq/azmq/blob/master/LICENSE-BOOST_1_0 'Boost Software License 1.0')|provides Boost Asio style bindings for ZeroMQ|21.12.05|[repo](https://github.com/zeromq/azmq 'zeromq/azmq repo on github')|[diff](https://github.com/externpro/azmq/compare/zeromq:e0058a38976399006f535a9010d29e763b43fcd8...xp21.12.05 'patch/diff')|
 |[boost](http://www.boost.org/ 'Boost website')|[open](http://www.boost.org/users/license.html 'Boost Software License')|libraries that give C++ a boost|1.76.0|[repo](https://github.com/boostorg/boost 'boost repo on github')|none|
 |[c-ares](http://c-ares.haxx.se/ 'c-ares website')|[open](http://c-ares.haxx.se/license.html 'c-ares license: MIT license')|C library for asynchronous DNS requests (including name resolves)|1.18.1|[repo](https://github.com/c-ares/c-ares 'c-ares repo on github')|[diff](https://github.com/externpro/c-ares/compare/c-ares:cares-1_18_1...xp-1_18_1 'patch/diff')|
-|[ceres-solver](http://ceres-solver.org 'Ceres Solver website')|[open](http://ceres-solver.org/license.html 'New BSD License')|C++ library for modeling and solving large, complicated optimization problems|1.14.0|[repo](https://github.com/ceres-solver/ceres-solver 'ceres-solver repo on github')|[diff](https://github.com/externpro/ceres-solver/compare/ceres-solver:1.14.0...xp1.14.0 'patch/diff')|
 |[cppzmq](https://zeromq.org/ 'ZeroMQ website')|[open](http://wiki.zeromq.org/area:licensing 'GNU LGPL plus static linking exception')|header-only C++ binding for libzmq|4.7.1|[repo](https://github.com/zeromq/cppzmq 'zeromq/cppzmq repo on github')|[diff](https://github.com/externpro/cppzmq/compare/zeromq:v4.7.1...xp4.7.1 'patch/diff')|
 |[cURL](http://curl.haxx.se/libcurl/ 'libcurl website')|[open](http://curl.haxx.se/docs/copyright.html 'curl license: MIT/X derivate license')|the multiprotocol file transfer library|7.80.0|[repo](https://github.com/curl/curl 'curl repo on github')|[diff](https://github.com/externpro/curl/compare/curl:curl-7_80_0...xp-7_80_0 'patch/diff')|
-|[Eigen](http://eigen.tuxfamily.org/ 'Eigen website')|[open](http://eigen.tuxfamily.org/index.php?title=Main_Page#License 'Eigen license: MPL2 (aka Mozilla Public License)')|C++ template library for linear algebra|3.3.7|[repo](https://gitlab.com/libeigen/eigen.git 'eigen repo on gitlab')|[diff](https://github.com/externpro/eigen/compare/3.3.7...xp3.3.7 'patch/diff')|
 |[Expat](https://libexpat.github.io 'Expat website')|[open](https://github.com/libexpat/libexpat/blob/R_2_2_5/expat/COPYING 'Expat License (MIT/X Consortium license)')|a stream-oriented XML parser library written in C|2.2.5|[repo](https://github.com/libexpat/libexpat 'libexpat repo on github')|[diff](https://github.com/externpro/libexpat/compare/libexpat:R_2_2_5...xp2.2.5 'patch/diff')|
 |[fecpp](http://www.randombit.net/code/fecpp/ 'C++ forward error correction with SIMD optimizations')|[open](http://www.randombit.net/code/fecpp/ 'BSD License')|fecpp is a Forward Error Correction Library|0.9|[repo](https://github.com/randombit/fecpp 'fecpp repo on github')|[diff](https://github.com/externpro/fecpp/compare/v0.9...xp0.9 'patch/diff')|
 |[ffmpeg](https://www.ffmpeg.org/ 'ffmpeg website')|[LGPL](https://www.ffmpeg.org/legal.html 'Lesser GPL v2.1')|pre-built (MSW-only) complete, cross-platform solution to record, convert and stream audio and video|2.6.2.1|[repo](https://github.com/externpro/ffmpegBin 'ffmpeg binary repo on github')|[diff](https://github.com/externpro/ffmpegBin/compare/v2.6.2.1...xp2.6.2.1 'patch/diff')|
 |[ffmpeg](https://www.ffmpeg.org/ 'ffmpeg website')|[LGPL](https://www.ffmpeg.org/legal.html 'Lesser GPL v2.1')|complete, cross-platform solution to record, convert and stream audio and video|2.6.2|[repo](https://github.com/FFmpeg/FFmpeg 'ffmpeg repo on github')|[diff](https://github.com/ndrasmussen/FFmpeg/compare/FFmpeg:n2.6.2...xp2.6.2 'patch/diff')|
 |[ffmpeg](https://www.ffmpeg.org/ 'ffmpeg website')|[LGPL](https://www.ffmpeg.org/legal.html 'LGPL v2.1')|complete, cross-platform solution to record, convert and stream audio and video|4.3.1|[repo](https://github.com/FFmpeg/FFmpeg 'ffmpeg repo on github')|[diff](https://github.com/externpro/FFmpeg/compare/FFmpeg:n4.3.1...xp4.3.1 'patch/diff')|
-|[flatbuffers](http://google.github.io/flatbuffers/ 'FlatBuffers website')|[open](https://github.com/google/flatbuffers/blob/v2.0.6/LICENSE.txt 'Apache license, v2')|efficient cross platform serialization library|2.0.6|[repo](https://github.com/google/flatbuffers 'flatbuffers repo on github')|[diff](https://github.com/externpro/flatbuffers/compare/google:v2.0.6...xp2.0.6 'patch/diff')|
 |[geotiff](http://trac.osgeo.org/geotiff/ 'GeoTIFF trac website')|[open](http://trac.osgeo.org/geotiff/ 'trac site states it is an open source library (no specific license mentioned)')|georeferencing info embedded within TIFF file|1.2.4|[repo](https://github.com/externpro/libgeotiff 'libgeotiff repo on github')|[diff](https://github.com/externpro/libgeotiff/compare/v1.2.4...xp1.2.4 'patch/diff')|
 |[GEOTRANS](http://earth-info.nga.mil/GandG/geotrans/ 'GEOTRANS website')|[open](http://earth-info.nga.mil/GandG/geotrans/docs/MSP_GeoTrans_Terms_of_Use.pdf 'GEOTRANS Terms of Use (no specific license mentioned)')|geographic translator (convert coordinates)|2.4.2|[repo](https://github.com/externpro/geotranz 'geotranz repo on github')|[diff](https://github.com/externpro/geotranz/compare/v2.4.2...xp2.4.2 'patch/diff')|
 |[GLEW](http://glew.sourceforge.net 'GLEW on sourceforge.net')|[open](http://glew.sourceforge.net/credits.html 'Modified BSD, Mesa 3-D (MIT), and Khronos (MIT)')|The OpenGL Extension Wrangler Library|1.13.0|[repo](https://github.com/nigels-com/glew 'GLEW repo on github')|[diff](https://github.com/externpro/glew/compare/nigels-com:glew-1.13.0...xp-1.13.0 'patch/diff')|
@@ -26,7 +22,6 @@
 |[libgit2](https://libgit2.github.com/ 'libgit2 website')|[open](https://github.com/libgit2/libgit2/blob/master/README.md#license 'GPL2 with linking exception')|portable, pure C implementation of the Git core methods|1.3.0|[repo](https://github.com/libgit2/libgit2 'libgit2 repo on github')|[diff](https://github.com/externpro/libgit2/compare/libgit2:v1.3.0...xp1.3.0 'patch/diff')|
 |[libssh2](http://www.libssh2.org/ 'libssh2 website')|[open](http://www.libssh2.org/license.html 'BSD 3-Clause License - https://www.openhub.net/licenses/BSD-3-Clause')|client-side C library implementing SSH2 protocol|1.9.0|[repo](https://github.com/libssh2/libssh2 'libssh2 repo on github')|[diff](https://github.com/externpro/libssh2/compare/libssh2:libssh2-1.9.0...xp-1.9.0 'patch/diff')|
 |[libstrophe](http://strophe.im/libstrophe/ 'libstrophe website')|[open](https://github.com/strophe/libstrophe/blob/0.9.1/LICENSE.txt 'dual licensed under MIT and GPLv3')|A simple, lightweight C library for writing XMPP client|0.9.1|[repo](https://github.com/strophe/libstrophe 'libstrophe repo on github')|[diff](https://github.com/externpro/libstrophe/compare/strophe:0.9.1...xp0.9.1 'patch/diff')|
-|[libzmq](https://zeromq.org/ 'ZeroMQ website')|[open](http://wiki.zeromq.org/area:licensing 'GNU LGPL plus static linking exception')|high-performance asynchronous messaging library|4.3.4|[repo](https://github.com/zeromq/libzmq 'zeromq/libzmq repo on github')|[diff](https://github.com/externpro/libzmq/compare/zeromq:v4.3.4...xp4.3.4 'patch/diff')|
 |[LLVM](http://llvm.org/ 'LLVM website')|[open](https://releases.llvm.org/11.0.0/LICENSE.TXT 'Apache License v2.0 with LLVM Exceptions')|The LLVM Compiler Infrastructure|11.0.0|[repo](https://github.com/llvm/llvm-project 'llvm repo on github')|none|
 |[Lua](http://www.lua.org/ 'Lua website')|[open](http://www.lua.org/license.html 'MIT license')|a powerful, fast, lightweight, embeddable scripting language|5.2.3|[repo](https://github.com/LuaDist/lua 'lua repo on github')|[diff](https://github.com/externpro/lua/compare/LuaDist:5.2.3...xp5.2.3 'patch/diff')|
 |[OpenH264](http://www.openh264.org/ 'OpenH264 website')|[open](http://www.openh264.org/faq.html 'Two-Clause BSD license')|a codec library which supports H.264 encoding and decoding|1.4.0|[repo](https://github.com/cisco/openh264 'openh264 repo on github')|[diff](https://github.com/externpro/openh264/compare/cisco:v1.4.0...xp1.4.0 'patch/diff')|
@@ -35,7 +30,6 @@
 |[RapidJSON](http://Tencent.github.io/rapidjson/ 'RapidJSON on githubio')|[open](https://raw.githubusercontent.com/Tencent/rapidjson/master/license.txt 'The MIT License - http://opensource.org/licenses/mit-license.php')|C++ library for parsing and generating JSON|1.1.0|[repo](https://github.com/Tencent/rapidjson 'rapidjson repo on github')|[diff](https://github.com/externpro/rapidjson/compare/Tencent:v1.1.0...xp1.1.0 'patch/diff')|
 |[RapidXml](http://rapidxml.sourceforge.net/ 'RapidXml on sourceforge')|[open](http://rapidxml.sourceforge.net/license.txt 'Boost Software License -or- The MIT License')|fast XML parser|1.13|[repo](https://github.com/externpro/rapidxml 'rapidxml repo on github')|[diff](https://github.com/externpro/rapidxml/compare/v1.13...xp1.13 'patch/diff')|
 |[shapelib](http://shapelib.maptools.org/ 'Shapefile C Library website')|[open](http://shapelib.maptools.org/license.html 'MIT Style -or- LGPL')|reading, writing, updating ESRI Shapefiles|1.2.10|[repo](https://github.com/externpro/shapelib 'forked shapelib repo on github')|[diff](https://github.com/externpro/shapelib/compare/v1.2.10...xp1.2.10 'patch/diff')|
-|[sodium](https://doc.libsodium.org/ 'libsodium website')|[open](https://doc.libsodium.org/#license 'ISC license')|library for encryption, decryption, signatures, password hashing and more|21.11.18|[repo](https://github.com/jedisct1/libsodium 'libsodium repo on github')|[diff](https://github.com/externpro/libsodium/compare/jedisct1:aa099f5e82ae78175f9c1c48372a123cb634dd92...xp21.11.18 'patch/diff')|
 |[wirehair](https://github.com/catid/wirehair 'wirehair repo on github')|[open](https://github.com/catid/wirehair/blob/master/LICENSE.txt 'BSD 3-Clause New or Revised License')|fast and portable fountain codes in C|21.07.31|[repo](https://github.com/catid/wirehair 'wirehair repo on github')|[diff](https://github.com/externpro/wirehair/compare/catid:6d84fad40cbbbb29d4eb91204750ddffe0dcacfe...xp21.07.31 'patch/diff')|
 |[wxWidgets](http://wxwidgets.org/ 'wxWidgets website')|[open](http://www.wxwidgets.org/about/newlicen.htm 'wxWindows License: essentially LGPL with an exception')|Cross-Platform GUI Library|3.1.0|[repo](https://github.com/wxWidgets/wxWidgets 'wxWidgets repo on github')|[diff](https://github.com/externpro/wxWidgets/compare/v3.1.0_240125...xp3.1.0 'patch/diff')|
 |[wxInclude](http://wiki.wxwidgets.org/Embedding_PNG_Images 'wxInclude mentioned in this wxWiki page')|[open](http://wiki.wxwidgets.org/Embedding_PNG_Images 'assumed wxWindows license, since source can be downloaded from wxWiki')|embed resources into cross-platform code|1.0|[repo](https://github.com/externpro/wxInclude 'wxInclude repo on github')|[diff](https://github.com/externpro/wxInclude/compare/v1.0...rel 'patch/diff')|
@@ -54,6 +48,7 @@
 |boost|[graph](http://boost.org/libs/graph 'boost graph website')|a generic interface for traversing graphs, using C++ templates|1.76.0|[repo](https://github.com/boostorg/graph 'graph repo on github')|[diff](https://github.com/externpro/graph/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
 |boost|[boost_install](https://github.com/boostorg/boost_install 'boost_install repo')|implementation of the boost-install rule|1.76.0|[repo](https://github.com/boostorg/boost_install 'boost_install repo on github')|[diff](https://github.com/externpro/boost_install/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
 |boost|[interprocess](http://boost.org/libs/interprocess 'Boost.Interprocess website')|Shared memory, memory mapped files, process-shared mutexes, condition variables, containers and allocators|1.76.0|[repo](https://github.com/boostorg/interprocess 'interprocess repo on github')|[diff](https://github.com/externpro/interprocess/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
+|boost|[process](http://boost.org/libs/process 'Boost.Process website')|library to create processes in a portable way|1.76.0|[repo](https://github.com/boostorg/process 'process repo on github')|[diff](https://github.com/externpro/process/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
 |boost|[program_options](http://boost.org/libs/program_options 'boost program_options website')|library allows program developers to obtain program options, that is (name, value) pairs from the user, via conventional methods such as command line and config file|1.76.0|[repo](https://github.com/boostorg/program_options 'program_options repo on github')|[diff](https://github.com/externpro/program_options/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
 |boost|[program_options](http://boost.org/libs/program_options 'boost program_options website')|library allows program developers to obtain program options, that is (name, value) pairs from the user, via conventional methods such as command line and config file|1.76.0|[repo](https://github.com/boostorg/program_options 'program_options repo on github')|[diff](https://github.com/externpro/program_options/compare/boostorg:boost-1.76.0...xphpp1.76.0 'patch/diff')|
 |boost|[regex](http://boost.org/libs/regex 'boost regex website')|Regular expression library|1.76.0|[repo](https://github.com/boostorg/regex 'regex repo on github')|[diff](https://github.com/externpro/regex/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
@@ -72,10 +67,10 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_8677ce2061eaa5a6a425e0f27b35a2a2?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_dd55b6ff823f1d9bb675e7549a124617?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_8677ce2061eaa5a6a425e0f27b35a2a2
+depgraph_dd55b6ff823f1d9bb675e7549a124617
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
@@ -87,8 +82,6 @@ digraph GG {
   azmq -> boost;
   boost [shape=diamond];
   cares [label="c-ares" shape=diamond];
-  ceres [shape=diamond];
-  ceres -> eigen;
   clang [shape=box];
   clang -> llvm;
   clangformat [shape=box];
@@ -98,7 +91,6 @@ digraph GG {
   curl [shape=diamond];
   curl -> libssh2;
   curl -> cares;
-  eigen [shape=diamond];
   expat [shape=diamond];
   fecpp [shape=diamond];
   fecpp -> boost;
@@ -132,5 +124,5 @@ digraph GG {
   zmqpp [shape=diamond];
   zmqpp -> libzmq;
 }
-depgraph_8677ce2061eaa5a6a425e0f27b35a2a2
+depgraph_dd55b6ff823f1d9bb675e7549a124617
 </details>

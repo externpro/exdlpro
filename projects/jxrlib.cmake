@@ -26,6 +26,9 @@ set(PRO_JXRLIB
   )
 ########################################
 function(build_jxrlib)
+  if(APPLE AND NOT XP_PRO_JXRLIB)
+    return()
+  endif()
   if(NOT (XP_DEFAULT OR XP_PRO_JXRLIB))
     return()
   endif()

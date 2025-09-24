@@ -23,6 +23,9 @@ set(PRO_RAPIDJSON
   )
 ########################################
 function(build_rapidjson)
+  if(APPLE AND NOT XP_PRO_RAPIDJSON)
+    return()
+  endif()
   if(NOT (XP_DEFAULT OR XP_PRO_RAPIDJSON))
     return()
   endif()

@@ -11,7 +11,7 @@ set(PRO_ZMQPP
   LICENSE "open" ${REPO}/blob/develop/LICENSE "Mozilla Public License 2.0"
   DESC "high-level binding for libzmq"
   REPO "repo" ${REPO} "zeromq/zmqpp repo on github"
-  GRAPH BUILD_DEPS libzmq
+  GRAPH
   VER ${VER}
   GIT_ORIGIN ${FORK}
   GIT_UPSTREAM ${REPO}
@@ -29,7 +29,6 @@ function(build_zmqpp)
   if(NOT (XP_DEFAULT OR XP_PRO_ZMQPP))
     return()
   endif()
-  xpBuildDeps(depTgts ${PRO_ZMQPP})
   xpGetArgValue(${PRO_ZMQPP} ARG NAME VALUE NAME)
   xpGetArgValue(${PRO_ZMQPP} ARG VER VALUE VER)
   set(XP_CONFIGURE
@@ -49,5 +48,5 @@ function(build_zmqpp)
     ${STAGE_DIR}/share/cmake/usexp-${NAME}-config.cmake
     @ONLY NEWLINE_STYLE LF
     )
-  xpCmakeBuild(${NAME} "${depTgts}" "${XP_CONFIGURE}")
+  xpCmakeBuild(${NAME} "" "${XP_CONFIGURE}")
 endfunction()

@@ -24,6 +24,9 @@ set(PRO_WIREHAIR
   )
 ########################################
 function(build_wirehair)
+  if(APPLE AND NOT XP_PRO_WIREHAIR)
+    return()
+  endif()
   if(NOT (XP_DEFAULT OR XP_PRO_WIREHAIR))
     return()
   endif()

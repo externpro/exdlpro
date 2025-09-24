@@ -11,7 +11,7 @@ set(PRO_ACTIVEMQCPP
   LICENSE "open" http://www.apache.org/licenses/LICENSE-2.0.html "Apache 2.0"
   DESC "ActiveMQ C++ Messaging Service (CMS) client library"
   REPO "repo" ${REPO} "${PROJ} repo on github"
-  GRAPH BUILD_DEPS apr openssl
+  GRAPH BUILD_DEPS openssl
   VER ${VER}
   GIT_ORIGIN ${FORK}
   GIT_UPSTREAM ${REPO}

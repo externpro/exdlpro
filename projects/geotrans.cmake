@@ -48,6 +48,9 @@ set(PRO_GEOTRANS
   )
 ########################################
 function(build_geotrans)
+  if(APPLE AND NOT XP_PRO_GEOTRANS)
+    return()
+  endif()
   if(NOT (XP_DEFAULT OR XP_PRO_GEOTRANS))
     return()
   endif()

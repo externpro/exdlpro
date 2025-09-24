@@ -17,9 +17,12 @@ set(PRO_BOOST
   DLURL https://archives.boost.io/release/${VER}/source/boost_${VER_}.tar.bz2
   DLMD5 33334dd7f862e8ac9fe1cc7c6584fb6d
   DEPS_FUNC build_boost
-  SUBPRO boostbeast boostbuild boostdll boostgil boostgraph boostinstall boostinterprocess boostprogram_options boostprogram_optionshpp boostregex boostunits
+  SUBPRO boostbeast boostbuild boostdll boostgil boostgraph boostinstall boostinterprocess boostprocess boostprogram_options boostprogram_optionshpp boostregex boostunits
   )
 function(build_boost)
+  if(APPLE AND NOT XP_PRO_BOOST)
+    return()
+  endif()
   if(NOT (XP_DEFAULT OR XP_PRO_BOOST))
     return()
   endif()
@@ -241,7 +244,7 @@ function(build_boostlibs)
     else()
       message(FATAL_ERROR "boost.cmake: compiler support lacking: ${CMAKE_CXX_COMPILER_ID}")
     endif()
-    include(${MODULES_DIR}/flags.cmake) # populates CMAKE_*_FLAGS
+    include(${MODULES_DIR}/xpflags.cmake) # populates CMAKE_*_FLAGS
     if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
       # clang: warning: argument unused during compilation: '-arch x86_64'
       xpStringRemoveIfExists(CMAKE_CXX_FLAGS "-arch x86_64")

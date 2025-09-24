@@ -1,12 +1,12 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
 new file mode 100644
-index 0000000..2b3c540
+index 0000000..34471f9
 --- /dev/null
 +++ b/CMakeLists.txt
 @@ -0,0 +1,4 @@
-+cmake_minimum_required(VERSION 3.20)
++cmake_minimum_required(VERSION 3.31)
 +project(glew)
-+include(flags OPTIONAL)
++include(xpflags)
 +add_subdirectory(build/cmake)
 diff --git a/build/cmake/CMakeLists.txt b/build/cmake/CMakeLists.txt
 index 1563f9f..feb0007 100644

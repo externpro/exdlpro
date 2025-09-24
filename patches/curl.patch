@@ -1,12 +1,12 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index a88f49b3b..df6507c13 100644
+index a88f49b3b..f5dcd73f2 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -46,6 +46,13 @@ include(CMakeDependentOption)
  include(CheckCCompilerFlag)
  
  project(CURL C)
-+include(flags OPTIONAL)
++include(xpflags)
 +if(DEFINED XP_NAMESPACE)
 +  set(XP_OPT_INSTALL EXCLUDE_FROM_ALL)
 +  set(nameSpace ${XP_NAMESPACE}::)

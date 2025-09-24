@@ -1,13 +1,13 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
 new file mode 100644
-index 0000000..92cbdd1
+index 0000000..e456579
 --- /dev/null
 +++ b/CMakeLists.txt
 @@ -0,0 +1,7 @@
-+cmake_minimum_required(VERSION 3.20)
++cmake_minimum_required(VERSION 3.31)
 +project(jasper)
 +include(GNUInstallDirs)
-+include(flags OPTIONAL)
++include(xpflags)
 +include(configure.cmake)
 +add_subdirectory(src/libjasper)
 +add_subdirectory(src/appl)
