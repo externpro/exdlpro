@@ -2662,7 +2662,7 @@ index 0000000..48b7f37
 +set_wxtarget_properties(${lib_name})
 diff --git a/wxwidgets-targets.cmake b/wxwidgets-targets.cmake
 new file mode 100644
-index 0000000..079925c
+index 0000000..df3c201
 --- /dev/null
 +++ b/wxwidgets-targets.cmake
 @@ -0,0 +1,152 @@
@@ -2684,7 +2684,7 @@ index 0000000..079925c
 +    )
 +  string(REGEX REPLACE "([0-9])\\.([0-9])\\.([0-9])?" "\\1.\\2" wxREL ${wxVER})
 +  set(wxWidgets_CONFIG_OPTIONS --prefix=${_IMPORT_PREFIX} --version=${wxREL})
-+  find_package(wxWidgets REQUIRED ${wx_all_libs})
++  find_package(wxWidgets BYPASS_PROVIDER REQUIRED ${wx_all_libs})
 +  if(XP_WXDEBUG)
 +    message(STATUS "wxWidgets_INCLUDE_DIRS: ${wxWidgets_INCLUDE_DIRS}")
 +    #message(STATUS "wxWidgets_LIBRARIES: ${wxWidgets_LIBRARIES}")
