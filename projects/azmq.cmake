@@ -11,7 +11,7 @@ set(PRO_AZMQ
   LICENSE "open" ${REPO}/blob/master/LICENSE-BOOST_1_0 "Boost Software License 1.0"
   DESC "provides Boost Asio style bindings for ZeroMQ"
   REPO "repo" ${REPO} "zeromq/azmq repo on github"
-  GRAPH BUILD_DEPS boost
+  GRAPH
   VER ${VER}
   GIT_ORIGIN ${FORK}
   GIT_UPSTREAM ${REPO}
@@ -31,7 +31,6 @@ function(build_azmq)
   if(NOT (XP_DEFAULT OR XP_PRO_AZMQ))
     return()
   endif()
-  xpBuildDeps(depsTgts ${PRO_AZMQ})
   xpGetArgValue(${PRO_AZMQ} ARG NAME VALUE NAME)
   xpGetArgValue(${PRO_AZMQ} ARG VER VALUE VER)
   set(XP_CONFIGURE
@@ -50,5 +49,5 @@ function(build_azmq)
     ${STAGE_DIR}/share/cmake/usexp-${NAME}-config.cmake
     @ONLY NEWLINE_STYLE LF
     )
-  xpCmakeBuild(${NAME} "${depsTgts}" "${XP_CONFIGURE}")
+  xpCmakeBuild(${NAME} "" "${XP_CONFIGURE}")
 endfunction()
