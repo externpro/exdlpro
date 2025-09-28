@@ -14,7 +14,7 @@ set(PRO_WXINCLUDE
   LICENSE "open" http://wiki.wxwidgets.org/Embedding_PNG_Images "assumed wxWindows license, since source can be downloaded from wxWiki"
   DESC "embed resources into cross-platform code"
   REPO "repo" ${REPO} "wxInclude repo on github"
-  GRAPH GRAPH_SHAPE box BUILD_DEPS boost
+  GRAPH GRAPH_SHAPE box
   VER ${VER}
   GIT_ORIGIN ${REPO}
   GIT_TAG rel # what to 'git checkout'
@@ -33,7 +33,6 @@ function(build_wxinclude)
   if(NOT (XP_DEFAULT OR XP_PRO_WXINCLUDE))
     return()
   endif()
-  xpBuildDeps(depsTgts ${PRO_WXINCLUDE})
   set(oneValueArgs TARGETS EXE)
   cmake_parse_arguments(wxinc "" "${oneValueArgs}" "" ${ARGN})
   xpGetArgValue(${PRO_WXINCLUDE} ARG NAME VALUE NAME)
@@ -52,7 +51,7 @@ function(build_wxinclude)
     @ONLY NEWLINE_STYLE LF
     )
   set(BUILD_CONFIGS Release) # we only need a release executable
-  xpCmakeBuild(${NAME} "${depsTgts}" "${XP_CONFIGURE}" ${NAME}Targets)
+  xpCmakeBuild(${NAME} "" "${XP_CONFIGURE}" ${NAME}Targets)
   if(DEFINED wxinc_TARGETS)
     xpListAppendIfDne(${wxinc_TARGETS} "${${NAME}Targets}")
     set(${wxinc_TARGETS} "${${wxinc_TARGETS}}" PARENT_SCOPE)

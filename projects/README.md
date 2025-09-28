@@ -4,7 +4,6 @@
 |-------|-------|-----------|-------|----------|----------|
 |[ActiveMQ-CPP](http://activemq.apache.org/cms/ 'ActiveMQ CMS website')|[open](http://www.apache.org/licenses/LICENSE-2.0.html 'Apache 2.0')|ActiveMQ C++ Messaging Service (CMS) client library|3.9.5|[repo](https://github.com/apache/activemq-cpp 'activemq-cpp repo on github')|[diff](https://github.com/externpro/activemq-cpp/compare/apache:activemq-cpp-3.9.5...xp-3.9.5 'patch/diff')|
 |[azmq](https://zeromq.org/ 'ZeroMQ website')|[open](https://github.com/zeromq/azmq/blob/master/LICENSE-BOOST_1_0 'Boost Software License 1.0')|provides Boost Asio style bindings for ZeroMQ|21.12.05|[repo](https://github.com/zeromq/azmq 'zeromq/azmq repo on github')|[diff](https://github.com/externpro/azmq/compare/zeromq:e0058a38976399006f535a9010d29e763b43fcd8...xp21.12.05 'patch/diff')|
-|[boost](http://www.boost.org/ 'Boost website')|[open](http://www.boost.org/users/license.html 'Boost Software License')|libraries that give C++ a boost|1.76.0|[repo](https://github.com/boostorg/boost 'boost repo on github')|none|
 |[c-ares](http://c-ares.haxx.se/ 'c-ares website')|[open](http://c-ares.haxx.se/license.html 'c-ares license: MIT license')|C library for asynchronous DNS requests (including name resolves)|1.18.1|[repo](https://github.com/c-ares/c-ares 'c-ares repo on github')|[diff](https://github.com/externpro/c-ares/compare/c-ares:cares-1_18_1...xp-1_18_1 'patch/diff')|
 |[cppzmq](https://zeromq.org/ 'ZeroMQ website')|[open](http://wiki.zeromq.org/area:licensing 'GNU LGPL plus static linking exception')|header-only C++ binding for libzmq|4.7.1|[repo](https://github.com/zeromq/cppzmq 'zeromq/cppzmq repo on github')|[diff](https://github.com/externpro/cppzmq/compare/zeromq:v4.7.1...xp4.7.1 'patch/diff')|
 |[cURL](http://curl.haxx.se/libcurl/ 'libcurl website')|[open](http://curl.haxx.se/docs/copyright.html 'curl license: MIT/X derivate license')|the multiprotocol file transfer library|7.80.0|[repo](https://github.com/curl/curl 'curl repo on github')|[diff](https://github.com/externpro/curl/compare/curl:curl-7_80_0...xp-7_80_0 'patch/diff')|
@@ -41,18 +40,6 @@
 
 |project|sub|description|version|repository|patch/diff|
 |-------|---|-----------|-------|----------|----------|
-|boost|[beast](http://boost.org/libs/beast 'Boost.Beast website')|HTTP and WebSocket built on Boost.Asio in C++11|1.76.0|[repo](https://github.com/boostorg/beast 'beast repo on github')|[diff](https://github.com/externpro/beast/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
-|boost|[build](http://boost.org/tools/build 'Boost Build website')|boost build|1.76.0|[repo](https://github.com/boostorg/build 'boost build repo on github')|[diff](https://github.com/externpro/build/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
-|boost|[dll](http://boost.org/libs/dll 'Boost.DLL website')|library for comfortable work with DLL and DSO|1.76.0|[repo](https://github.com/boostorg/dll 'dll repo on github')|[diff](https://github.com/externpro/dll/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
-|boost|[gil](http://boost.org/libs/gil 'boost gil website')|gil (generic image library)|1.76.0|[repo](https://github.com/boostorg/gil 'gil repo on github')|[diff](https://github.com/externpro/gil/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
-|boost|[graph](http://boost.org/libs/graph 'boost graph website')|a generic interface for traversing graphs, using C++ templates|1.76.0|[repo](https://github.com/boostorg/graph 'graph repo on github')|[diff](https://github.com/externpro/graph/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
-|boost|[boost_install](https://github.com/boostorg/boost_install 'boost_install repo')|implementation of the boost-install rule|1.76.0|[repo](https://github.com/boostorg/boost_install 'boost_install repo on github')|[diff](https://github.com/externpro/boost_install/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
-|boost|[interprocess](http://boost.org/libs/interprocess 'Boost.Interprocess website')|Shared memory, memory mapped files, process-shared mutexes, condition variables, containers and allocators|1.76.0|[repo](https://github.com/boostorg/interprocess 'interprocess repo on github')|[diff](https://github.com/externpro/interprocess/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
-|boost|[process](http://boost.org/libs/process 'Boost.Process website')|library to create processes in a portable way|1.76.0|[repo](https://github.com/boostorg/process 'process repo on github')|[diff](https://github.com/externpro/process/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
-|boost|[program_options](http://boost.org/libs/program_options 'boost program_options website')|library allows program developers to obtain program options, that is (name, value) pairs from the user, via conventional methods such as command line and config file|1.76.0|[repo](https://github.com/boostorg/program_options 'program_options repo on github')|[diff](https://github.com/externpro/program_options/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
-|boost|[program_options](http://boost.org/libs/program_options 'boost program_options website')|library allows program developers to obtain program options, that is (name, value) pairs from the user, via conventional methods such as command line and config file|1.76.0|[repo](https://github.com/boostorg/program_options 'program_options repo on github')|[diff](https://github.com/externpro/program_options/compare/boostorg:boost-1.76.0...xphpp1.76.0 'patch/diff')|
-|boost|[regex](http://boost.org/libs/regex 'boost regex website')|Regular expression library|1.76.0|[repo](https://github.com/boostorg/regex 'regex repo on github')|[diff](https://github.com/externpro/regex/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
-|boost|[units](http://boost.org/libs/units 'boost units website')|zero-overhead dimensional analysis and unit/quantity manipulation and conversion|1.76.0|[repo](https://github.com/boostorg/units 'units repo on github')|[diff](https://github.com/externpro/units/compare/boostorg:boost-1.76.0...xp1.76.0 'patch/diff')|
 |llvm|[clang](http://clang.llvm.org/ 'clang website')|clang: a C language family frontend for LLVM|11.0.0|none|none|
 |clang|[clang-format](http://clang.llvm.org/docs/ClangFormat.html 'ClangFormat documentation')|used to format C/C++/Obj-C code|11.0.0|none|none|
 |jpegxp|[jpeglossless](http://sourceforge.net/projects/jpeg/ 'JPEG on sourceforge')|lossless decode|62.1|[repo](https://github.com/externpro/libjpeg 'forked libjpeg repo on github')|[diff](https://github.com/externpro/libjpeg/compare/eccc424...lossless.6b 'patch/diff')|
@@ -67,17 +54,15 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_b7413f3f247fc82478a3bd5ffc74efa3?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_4f002755de901bf7e117b13173359937?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_b7413f3f247fc82478a3bd5ffc74efa3
+depgraph_4f002755de901bf7e117b13173359937
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
   activemqcpp -> openssl;
   azmq [shape=diamond];
-  azmq -> boost;
-  boost [shape=diamond];
   cares [label="c-ares" shape=diamond];
   clang [shape=box];
   clang -> llvm;
@@ -89,7 +74,6 @@ digraph GG {
   curl -> cares;
   expat [shape=diamond];
   fecpp [shape=diamond];
-  fecpp -> boost;
   ffmpeg [shape=diamond];
   ffmpeg -> openh264;
   ffmpeg -> yasm;
@@ -110,11 +94,10 @@ digraph GG {
   opensslasm [shape=diamond];
   wx [shape=diamond];
   wxinclude [shape=box];
-  wxinclude -> boost;
   wxx [shape=diamond];
   wxx -> wx;
   yasm [shape=box];
   zmqpp [shape=diamond];
 }
-depgraph_b7413f3f247fc82478a3bd5ffc74efa3
+depgraph_4f002755de901bf7e117b13173359937
 </details>

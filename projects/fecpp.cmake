@@ -10,7 +10,7 @@ set(PRO_FECPP
   LICENSE "open" http://www.randombit.net/code/fecpp/ "BSD License"
   DESC "fecpp is a Forward Error Correction Library"
   REPO "repo" ${REPO} "fecpp repo on github"
-  GRAPH BUILD_DEPS boost # library test code depends on boost
+  GRAPH
   VER ${VER}
   GIT_ORIGIN ${FORK}
   GIT_UPSTREAM ${REPO}
@@ -29,7 +29,6 @@ function(build_fecpp)
   if(NOT (XP_DEFAULT OR XP_PRO_FECPP))
     return()
   endif()
-  xpBuildDeps(depsTgts ${PRO_FECPP})
   xpGetArgValue(${PRO_FECPP} ARG NAME VALUE NAME)
   xpGetArgValue(${PRO_FECPP} ARG VER VALUE VER)
   set(XP_CONFIGURE
@@ -47,5 +46,5 @@ function(build_fecpp)
     ${STAGE_DIR}/share/cmake/usexp-${NAME}-config.cmake
     @ONLY NEWLINE_STYLE LF
     )
-  xpCmakeBuild(${NAME} "${depsTgts}" "${XP_CONFIGURE}")
+  xpCmakeBuild(${NAME} "" "${XP_CONFIGURE}")
 endfunction()
