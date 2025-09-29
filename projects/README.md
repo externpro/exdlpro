@@ -8,7 +8,6 @@
 |[cppzmq](https://zeromq.org/ 'ZeroMQ website')|[open](http://wiki.zeromq.org/area:licensing 'GNU LGPL plus static linking exception')|header-only C++ binding for libzmq|4.7.1|[repo](https://github.com/zeromq/cppzmq 'zeromq/cppzmq repo on github')|[diff](https://github.com/externpro/cppzmq/compare/zeromq:v4.7.1...xp4.7.1 'patch/diff')|
 |[cURL](http://curl.haxx.se/libcurl/ 'libcurl website')|[open](http://curl.haxx.se/docs/copyright.html 'curl license: MIT/X derivate license')|the multiprotocol file transfer library|7.80.0|[repo](https://github.com/curl/curl 'curl repo on github')|[diff](https://github.com/externpro/curl/compare/curl:curl-7_80_0...xp-7_80_0 'patch/diff')|
 |[Expat](https://libexpat.github.io 'Expat website')|[open](https://github.com/libexpat/libexpat/blob/R_2_2_5/expat/COPYING 'Expat License (MIT/X Consortium license)')|a stream-oriented XML parser library written in C|2.2.5|[repo](https://github.com/libexpat/libexpat 'libexpat repo on github')|[diff](https://github.com/externpro/libexpat/compare/libexpat:R_2_2_5...xp2.2.5 'patch/diff')|
-|[fecpp](http://www.randombit.net/code/fecpp/ 'C++ forward error correction with SIMD optimizations')|[open](http://www.randombit.net/code/fecpp/ 'BSD License')|fecpp is a Forward Error Correction Library|0.9|[repo](https://github.com/randombit/fecpp 'fecpp repo on github')|[diff](https://github.com/externpro/fecpp/compare/v0.9...xp0.9 'patch/diff')|
 |[ffmpeg](https://www.ffmpeg.org/ 'ffmpeg website')|[LGPL](https://www.ffmpeg.org/legal.html 'Lesser GPL v2.1')|pre-built (MSW-only) complete, cross-platform solution to record, convert and stream audio and video|2.6.2.1|[repo](https://github.com/externpro/ffmpegBin 'ffmpeg binary repo on github')|[diff](https://github.com/externpro/ffmpegBin/compare/v2.6.2.1...xp2.6.2.1 'patch/diff')|
 |[ffmpeg](https://www.ffmpeg.org/ 'ffmpeg website')|[LGPL](https://www.ffmpeg.org/legal.html 'Lesser GPL v2.1')|complete, cross-platform solution to record, convert and stream audio and video|2.6.2|[repo](https://github.com/FFmpeg/FFmpeg 'ffmpeg repo on github')|[diff](https://github.com/ndrasmussen/FFmpeg/compare/FFmpeg:n2.6.2...xp2.6.2 'patch/diff')|
 |[ffmpeg](https://www.ffmpeg.org/ 'ffmpeg website')|[LGPL](https://www.ffmpeg.org/legal.html 'LGPL v2.1')|complete, cross-platform solution to record, convert and stream audio and video|4.3.1|[repo](https://github.com/FFmpeg/FFmpeg 'ffmpeg repo on github')|[diff](https://github.com/externpro/FFmpeg/compare/FFmpeg:n4.3.1...xp4.3.1 'patch/diff')|
@@ -54,10 +53,10 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_4f002755de901bf7e117b13173359937?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_594abeee87a813fa90d2469f38e1377f?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_4f002755de901bf7e117b13173359937
+depgraph_594abeee87a813fa90d2469f38e1377f
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
@@ -73,7 +72,6 @@ digraph GG {
   curl -> libssh2;
   curl -> cares;
   expat [shape=diamond];
-  fecpp [shape=diamond];
   ffmpeg [shape=diamond];
   ffmpeg -> openh264;
   ffmpeg -> yasm;
@@ -99,5 +97,5 @@ digraph GG {
   yasm [shape=box];
   zmqpp [shape=diamond];
 }
-depgraph_4f002755de901bf7e117b13173359937
+depgraph_594abeee87a813fa90d2469f38e1377f
 </details>
