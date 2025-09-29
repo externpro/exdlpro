@@ -3,7 +3,6 @@
 |project|license|description|version|repository|patch/diff|
 |-------|-------|-----------|-------|----------|----------|
 |[ActiveMQ-CPP](http://activemq.apache.org/cms/ 'ActiveMQ CMS website')|[open](http://www.apache.org/licenses/LICENSE-2.0.html 'Apache 2.0')|ActiveMQ C++ Messaging Service (CMS) client library|3.9.5|[repo](https://github.com/apache/activemq-cpp 'activemq-cpp repo on github')|[diff](https://github.com/externpro/activemq-cpp/compare/apache:activemq-cpp-3.9.5...xp-3.9.5 'patch/diff')|
-|[azmq](https://zeromq.org/ 'ZeroMQ website')|[open](https://github.com/zeromq/azmq/blob/master/LICENSE-BOOST_1_0 'Boost Software License 1.0')|provides Boost Asio style bindings for ZeroMQ|21.12.05|[repo](https://github.com/zeromq/azmq 'zeromq/azmq repo on github')|[diff](https://github.com/externpro/azmq/compare/zeromq:e0058a38976399006f535a9010d29e763b43fcd8...xp21.12.05 'patch/diff')|
 |[c-ares](http://c-ares.haxx.se/ 'c-ares website')|[open](http://c-ares.haxx.se/license.html 'c-ares license: MIT license')|C library for asynchronous DNS requests (including name resolves)|1.18.1|[repo](https://github.com/c-ares/c-ares 'c-ares repo on github')|[diff](https://github.com/externpro/c-ares/compare/c-ares:cares-1_18_1...xp-1_18_1 'patch/diff')|
 |[cppzmq](https://zeromq.org/ 'ZeroMQ website')|[open](http://wiki.zeromq.org/area:licensing 'GNU LGPL plus static linking exception')|header-only C++ binding for libzmq|4.7.1|[repo](https://github.com/zeromq/cppzmq 'zeromq/cppzmq repo on github')|[diff](https://github.com/externpro/cppzmq/compare/zeromq:v4.7.1...xp4.7.1 'patch/diff')|
 |[cURL](http://curl.haxx.se/libcurl/ 'libcurl website')|[open](http://curl.haxx.se/docs/copyright.html 'curl license: MIT/X derivate license')|the multiprotocol file transfer library|7.80.0|[repo](https://github.com/curl/curl 'curl repo on github')|[diff](https://github.com/externpro/curl/compare/curl:curl-7_80_0...xp-7_80_0 'patch/diff')|
@@ -53,15 +52,14 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_594abeee87a813fa90d2469f38e1377f?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_02ef77300226fc236d665dc90d426925?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_594abeee87a813fa90d2469f38e1377f
+depgraph_02ef77300226fc236d665dc90d426925
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
   activemqcpp -> openssl;
-  azmq [shape=diamond];
   cares [label="c-ares" shape=diamond];
   clang [shape=box];
   clang -> llvm;
@@ -97,5 +95,5 @@ digraph GG {
   yasm [shape=box];
   zmqpp [shape=diamond];
 }
-depgraph_594abeee87a813fa90d2469f38e1377f
+depgraph_02ef77300226fc236d665dc90d426925
 </details>
