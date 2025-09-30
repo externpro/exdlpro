@@ -29,7 +29,6 @@
 |[shapelib](http://shapelib.maptools.org/ 'Shapefile C Library website')|[open](http://shapelib.maptools.org/license.html 'MIT Style -or- LGPL')|reading, writing, updating ESRI Shapefiles|1.2.10|[repo](https://github.com/externpro/shapelib 'forked shapelib repo on github')|[diff](https://github.com/externpro/shapelib/compare/v1.2.10...xp1.2.10 'patch/diff')|
 |[wirehair](https://github.com/catid/wirehair 'wirehair repo on github')|[open](https://github.com/catid/wirehair/blob/master/LICENSE.txt 'BSD 3-Clause New or Revised License')|fast and portable fountain codes in C|21.07.31|[repo](https://github.com/catid/wirehair 'wirehair repo on github')|[diff](https://github.com/externpro/wirehair/compare/catid:6d84fad40cbbbb29d4eb91204750ddffe0dcacfe...xp21.07.31 'patch/diff')|
 |[wxWidgets](http://wxwidgets.org/ 'wxWidgets website')|[open](http://www.wxwidgets.org/about/newlicen.htm 'wxWindows License: essentially LGPL with an exception')|Cross-Platform GUI Library|3.1.0|[repo](https://github.com/wxWidgets/wxWidgets 'wxWidgets repo on github')|[diff](https://github.com/externpro/wxWidgets/compare/v3.1.0_240125...xp3.1.0 'patch/diff')|
-|[wxInclude](http://wiki.wxwidgets.org/Embedding_PNG_Images 'wxInclude mentioned in this wxWiki page')|[open](http://wiki.wxwidgets.org/Embedding_PNG_Images 'assumed wxWindows license, since source can be downloaded from wxWiki')|embed resources into cross-platform code|1.0|[repo](https://github.com/externpro/wxInclude 'wxInclude repo on github')|[diff](https://github.com/externpro/wxInclude/compare/v1.0...rel 'patch/diff')|
 |[wxx](https://github.com/externpro/wxx 'wxx project on github')|[open](http://wxcode.sourceforge.net/rules.php 'wxCode components must use wxWindows license')|wxWidget-based extra components|2024.01.25|[repo](https://github.com/externpro/wxx 'wxx repo on github')|[diff](https://github.com/externpro/wxx/compare/wxx.03...xpro 'patch/diff')|
 |[yasm](http://yasm.tortall.net/ 'yasm website')|[open](https://github.com/yasm/yasm/blob/v1.3.0/COPYING 'new BSD license')|assembler and disassembler for the Intel x86 architecture|1.3.0|[repo](https://github.com/yasm/yasm 'yasm repo on github')|[diff](https://github.com/externpro/yasm/compare/yasm:v1.3.0...xp1.3.0 'patch/diff')|
 |[zmqpp](https://zeromq.github.io/zmqpp/ 'zmqpp website')|[open](https://github.com/zeromq/zmqpp/blob/develop/LICENSE 'Mozilla Public License 2.0')|high-level binding for libzmq|21.07.09|[repo](https://github.com/zeromq/zmqpp 'zeromq/zmqpp repo on github')|[diff](https://github.com/externpro/zmqpp/compare/zeromq:ba4230d5d03d29ced9ca788e3bd1095477db08ae...xp21.07.09 'patch/diff')|
@@ -52,10 +51,10 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_02ef77300226fc236d665dc90d426925?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_e5d01e28256db550a1630aa1dd430bee?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_02ef77300226fc236d665dc90d426925
+depgraph_e5d01e28256db550a1630aa1dd430bee
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
@@ -89,11 +88,10 @@ digraph GG {
   openssl -> opensslasm;
   opensslasm [shape=diamond];
   wx [shape=diamond];
-  wxinclude [shape=box];
   wxx [shape=diamond];
   wxx -> wx;
   yasm [shape=box];
   zmqpp [shape=diamond];
 }
-depgraph_02ef77300226fc236d665dc90d426925
+depgraph_e5d01e28256db550a1630aa1dd430bee
 </details>
