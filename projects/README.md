@@ -19,7 +19,6 @@
 |[libgit2](https://libgit2.github.com/ 'libgit2 website')|[open](https://github.com/libgit2/libgit2/blob/master/README.md#license 'GPL2 with linking exception')|portable, pure C implementation of the Git core methods|1.3.0|[repo](https://github.com/libgit2/libgit2 'libgit2 repo on github')|[diff](https://github.com/externpro/libgit2/compare/libgit2:v1.3.0...xp1.3.0 'patch/diff')|
 |[libssh2](http://www.libssh2.org/ 'libssh2 website')|[open](http://www.libssh2.org/license.html 'BSD 3-Clause License - https://www.openhub.net/licenses/BSD-3-Clause')|client-side C library implementing SSH2 protocol|1.9.0|[repo](https://github.com/libssh2/libssh2 'libssh2 repo on github')|[diff](https://github.com/externpro/libssh2/compare/libssh2:libssh2-1.9.0...xp-1.9.0 'patch/diff')|
 |[libstrophe](http://strophe.im/libstrophe/ 'libstrophe website')|[open](https://github.com/strophe/libstrophe/blob/0.9.1/LICENSE.txt 'dual licensed under MIT and GPLv3')|A simple, lightweight C library for writing XMPP client|0.9.1|[repo](https://github.com/strophe/libstrophe 'libstrophe repo on github')|[diff](https://github.com/externpro/libstrophe/compare/strophe:0.9.1...xp0.9.1 'patch/diff')|
-|[LLVM](http://llvm.org/ 'LLVM website')|[open](https://releases.llvm.org/11.0.0/LICENSE.TXT 'Apache License v2.0 with LLVM Exceptions')|The LLVM Compiler Infrastructure|11.0.0|[repo](https://github.com/llvm/llvm-project 'llvm repo on github')|none|
 |[Lua](http://www.lua.org/ 'Lua website')|[open](http://www.lua.org/license.html 'MIT license')|a powerful, fast, lightweight, embeddable scripting language|5.2.3|[repo](https://github.com/LuaDist/lua 'lua repo on github')|[diff](https://github.com/externpro/lua/compare/LuaDist:5.2.3...xp5.2.3 'patch/diff')|
 |[OpenH264](http://www.openh264.org/ 'OpenH264 website')|[open](http://www.openh264.org/faq.html 'Two-Clause BSD license')|a codec library which supports H.264 encoding and decoding|1.4.0|[repo](https://github.com/cisco/openh264 'openh264 repo on github')|[diff](https://github.com/externpro/openh264/compare/cisco:v1.4.0...xp1.4.0 'patch/diff')|
 |[OpenSSL](http://www.openssl.org/ 'OpenSSL website')|[open](http://www.openssl.org/source/license.html 'OpenSSL, SSLeay License: BSD-style')|Cryptography and SSL/TLS Toolkit|1.1.1l|[repo](https://github.com/openssl/openssl 'openssl repo on github')|[diff](https://github.com/externpro/openssl/compare/openssl:OpenSSL_1_1_1l...xp_1_1_1l 'patch/diff')|
@@ -37,8 +36,6 @@
 
 |project|sub|description|version|repository|patch/diff|
 |-------|---|-----------|-------|----------|----------|
-|llvm|[clang](http://clang.llvm.org/ 'clang website')|clang: a C language family frontend for LLVM|11.0.0|none|none|
-|clang|[clang-format](http://clang.llvm.org/docs/ClangFormat.html 'ClangFormat documentation')|used to format C/C++/Obj-C code|11.0.0|none|none|
 |jpegxp|[jpeglossless](http://sourceforge.net/projects/jpeg/ 'JPEG on sourceforge')|lossless decode|62.1|[repo](https://github.com/externpro/libjpeg 'forked libjpeg repo on github')|[diff](https://github.com/externpro/libjpeg/compare/eccc424...lossless.6b 'patch/diff')|
 |jpegxp|[jpeglossy12](http://libjpeg.sourceforge.net/ 'libjpeg on sourceforge')|lossy 12-bit encode and decode|6b|[repo](https://github.com/externpro/libjpeg 'forked libjpeg repo on github')|[diff](https://github.com/externpro/libjpeg/compare/09a4003...lossy12.6b 'patch/diff')|
 |jpegxp|[jpeglossy8](http://libjpeg.sourceforge.net/ 'libjpeg on sourceforge')|lossy 8-bit encode and decode|6b|[repo](https://github.com/externpro/libjpeg 'forked libjpeg repo on github')|[diff](https://github.com/externpro/libjpeg/compare/09a4003...lossy8.6b 'patch/diff')|
@@ -51,19 +48,15 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_e5d01e28256db550a1630aa1dd430bee?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_6ac0fa3b19e6228716310f8fe67ac733?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_e5d01e28256db550a1630aa1dd430bee
+depgraph_6ac0fa3b19e6228716310f8fe67ac733
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
   activemqcpp -> openssl;
   cares [label="c-ares" shape=diamond];
-  clang [shape=box];
-  clang -> llvm;
-  clangformat [shape=box];
-  clangformat -> clang;
   cppzmq [shape=diamond];
   curl [shape=diamond];
   curl -> libssh2;
@@ -81,7 +74,6 @@ digraph GG {
   libstrophe [shape=diamond];
   libstrophe -> expat;
   libstrophe -> openssl;
-  llvm [shape=box];
   openh264 [shape=diamond];
   openh264 -> yasm;
   openssl [shape=diamond];
@@ -93,5 +85,5 @@ digraph GG {
   yasm [shape=box];
   zmqpp [shape=diamond];
 }
-depgraph_e5d01e28256db550a1630aa1dd430bee
+depgraph_6ac0fa3b19e6228716310f8fe67ac733
 </details>
