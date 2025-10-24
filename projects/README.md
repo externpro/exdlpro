@@ -10,7 +10,6 @@
 |[ffmpeg](https://www.ffmpeg.org/ 'ffmpeg website')|[LGPL](https://www.ffmpeg.org/legal.html 'Lesser GPL v2.1')|pre-built (MSW-only) complete, cross-platform solution to record, convert and stream audio and video|2.6.2.1|[repo](https://github.com/externpro/ffmpegBin 'ffmpeg binary repo on github')|[diff](https://github.com/externpro/ffmpegBin/compare/v2.6.2.1...xp2.6.2.1 'patch/diff')|
 |[ffmpeg](https://www.ffmpeg.org/ 'ffmpeg website')|[LGPL](https://www.ffmpeg.org/legal.html 'Lesser GPL v2.1')|complete, cross-platform solution to record, convert and stream audio and video|2.6.2|[repo](https://github.com/FFmpeg/FFmpeg 'ffmpeg repo on github')|[diff](https://github.com/ndrasmussen/FFmpeg/compare/FFmpeg:n2.6.2...xp2.6.2 'patch/diff')|
 |[ffmpeg](https://www.ffmpeg.org/ 'ffmpeg website')|[LGPL](https://www.ffmpeg.org/legal.html 'LGPL v2.1')|complete, cross-platform solution to record, convert and stream audio and video|4.3.1|[repo](https://github.com/FFmpeg/FFmpeg 'ffmpeg repo on github')|[diff](https://github.com/externpro/FFmpeg/compare/FFmpeg:n4.3.1...xp4.3.1 'patch/diff')|
-|[geotiff](http://trac.osgeo.org/geotiff/ 'GeoTIFF trac website')|[open](http://trac.osgeo.org/geotiff/ 'trac site states it is an open source library (no specific license mentioned)')|georeferencing info embedded within TIFF file|1.2.4|[repo](https://github.com/externpro/libgeotiff 'libgeotiff repo on github')|[diff](https://github.com/externpro/libgeotiff/compare/v1.2.4...xp1.2.4 'patch/diff')|
 |[GLEW](http://glew.sourceforge.net 'GLEW on sourceforge.net')|[open](http://glew.sourceforge.net/credits.html 'Modified BSD, Mesa 3-D (MIT), and Khronos (MIT)')|The OpenGL Extension Wrangler Library|1.13.0|[repo](https://github.com/nigels-com/glew 'GLEW repo on github')|[diff](https://github.com/externpro/glew/compare/nigels-com:glew-1.13.0...xp-1.13.0 'patch/diff')|
 |[jpegxp](http://www.ijg.org/ 'Independent JPEG Group website')|[open](https://github.com/externpro/libjpeg/blob/upstream/README 'libjpeg: see LEGAL ISSUES, in README (no specific license mentioned)')|JPEG codec with mods for Lossless, 12-bit lossy (XP)|24.01|[repo](https://github.com/externpro/jpegxp 'jpegxp repo on github')|[diff](https://github.com/externpro/jpegxp/compare/jxp.240125...jxp 'patch/diff')|
 |[libgit2](https://libgit2.github.com/ 'libgit2 website')|[open](https://github.com/libgit2/libgit2/blob/master/README.md#license 'GPL2 with linking exception')|portable, pure C implementation of the Git core methods|1.3.0|[repo](https://github.com/libgit2/libgit2 'libgit2 repo on github')|[diff](https://github.com/externpro/libgit2/compare/libgit2:v1.3.0...xp1.3.0 'patch/diff')|
@@ -21,8 +20,6 @@
 |[protobuf](https://developers.google.com/protocol-buffers/ 'Protocol Buffers website')|[open](https://github.com/protocolbuffers/protobuf/blob/v3.14.0/LICENSE '3-clause BSD license')|language-neutral, platform-neutral extensible mechanism for serializing structured data|3.14.0|[repo](https://github.com/protocolbuffers/protobuf 'protobuf repo on github')|[diff](https://github.com/externpro/protobuf/compare/protocolbuffers:v3.14.0...xp3.14.0 'patch/diff')|
 |[RapidXml](http://rapidxml.sourceforge.net/ 'RapidXml on sourceforge')|[open](http://rapidxml.sourceforge.net/license.txt 'Boost Software License -or- The MIT License')|fast XML parser|1.13|[repo](https://github.com/externpro/rapidxml 'rapidxml repo on github')|[diff](https://github.com/externpro/rapidxml/compare/v1.13...xp1.13 'patch/diff')|
 |[shapelib](http://shapelib.maptools.org/ 'Shapefile C Library website')|[open](http://shapelib.maptools.org/license.html 'MIT Style -or- LGPL')|reading, writing, updating ESRI Shapefiles|1.2.10|[repo](https://github.com/externpro/shapelib 'forked shapelib repo on github')|[diff](https://github.com/externpro/shapelib/compare/v1.2.10...xp1.2.10 'patch/diff')|
-|[wxWidgets](http://wxwidgets.org/ 'wxWidgets website')|[open](http://www.wxwidgets.org/about/newlicen.htm 'wxWindows License: essentially LGPL with an exception')|Cross-Platform GUI Library|3.1.0|[repo](https://github.com/wxWidgets/wxWidgets 'wxWidgets repo on github')|[diff](https://github.com/externpro/wxWidgets/compare/v3.1.0_240125...xp3.1.0 'patch/diff')|
-|[wxx](https://github.com/externpro/wxx 'wxx project on github')|[open](http://wxcode.sourceforge.net/rules.php 'wxCode components must use wxWindows license')|wxWidget-based extra components|2024.01.25|[repo](https://github.com/externpro/wxx 'wxx repo on github')|[diff](https://github.com/externpro/wxx/compare/wxx.03...xpro 'patch/diff')|
 |[yasm](http://yasm.tortall.net/ 'yasm website')|[open](https://github.com/yasm/yasm/blob/v1.3.0/COPYING 'new BSD license')|assembler and disassembler for the Intel x86 architecture|1.3.0|[repo](https://github.com/yasm/yasm 'yasm repo on github')|[diff](https://github.com/externpro/yasm/compare/yasm:v1.3.0...xp1.3.0 'patch/diff')|
 |[zmqpp](https://zeromq.github.io/zmqpp/ 'zmqpp website')|[open](https://github.com/zeromq/zmqpp/blob/develop/LICENSE 'Mozilla Public License 2.0')|high-level binding for libzmq|21.07.09|[repo](https://github.com/zeromq/zmqpp 'zeromq/zmqpp repo on github')|[diff](https://github.com/externpro/zmqpp/compare/zeromq:ba4230d5d03d29ced9ca788e3bd1095477db08ae...xp21.07.09 'patch/diff')|
 
@@ -35,17 +32,13 @@
 |jpegxp|[jpeglossy8](http://libjpeg.sourceforge.net/ 'libjpeg on sourceforge')|lossy 8-bit encode and decode|6b|[repo](https://github.com/externpro/libjpeg 'forked libjpeg repo on github')|[diff](https://github.com/externpro/libjpeg/compare/09a4003...lossy8.6b 'patch/diff')|
 |lua|[LuaBridge](http://vinniefalco.github.io/LuaBridge/Manual.html 'LuaBridge Reference Manual')|a lightweight, dependency-free library for binding Lua to C++|2.5|[repo](https://github.com/vinniefalco/LuaBridge 'LuaBridge repo on github')|none|
 |openssl|[opensslasm](https://github.com/externpro/opensslasm 'opensslasm project on github')|openssl assembly|1.1.1l|[repo](https://github.com/externpro/opensslasm 'opensslasm repo on github')|none|
-|wxWidgets|[wxcmake](https://github.com/externpro/wxcmake 'wxcmake project on github')|build wxWidgets via cmake|2019.11.08|[repo](https://github.com/externpro/wxcmake 'wxcmake repo on github')|[diff](https://github.com/externpro/wxcmake/compare/wx0...wx31 'patch/diff')|
-|wxx|[wxPlotCtrl](http://wxcode.sourceforge.net/showcomp.php?name=wxPlotCtrl 'wxplotctrl on sourceforge')|interactive xy data plotting widgets|2006.04.28|[repo](https://github.com/externpro/wxplotctrl 'wxplotctrl repo on github')|[diff](https://github.com/externpro/wxplotctrl/compare/v2006.04.28...xp2006.04.28 'patch/diff')|
-|wxx|[wxThings](http://wxcode.sourceforge.net/showcomp.php?name=wxThings 'wxthings on sourceforge')|a variety of data containers and controls|2006.04.28|[repo](https://github.com/externpro/wxthings 'wxthings repo on github')|[diff](https://github.com/externpro/wxthings/compare/v2006.04.28...xp2006.04.28 'patch/diff')|
-|wxx|[wxTLC](http://wxcode.sourceforge.net/components/treelistctrl/ 'wxTLC (treelistctrl) on sourceforge')|a multi column tree control|1208|[repo](https://github.com/externpro/wxTLC 'wxTLC repo on github')|[diff](https://github.com/externpro/wxTLC/compare/v1208...xp1208 'patch/diff')|
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_d417109c7c23c46bd403690509d8bfc7?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_4f4c90a9bb15c72bd19adc16a09e32fb?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_d417109c7c23c46bd403690509d8bfc7
+depgraph_4f4c90a9bb15c72bd19adc16a09e32fb
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
@@ -59,8 +52,6 @@ digraph GG {
   ffmpeg [shape=diamond];
   ffmpeg -> openh264;
   ffmpeg -> yasm;
-  geotiff [shape=diamond];
-  geotiff -> wx;
   libgit2 [shape=diamond];
   libgit2 -> libssh2;
   libssh2 [shape=diamond];
@@ -70,11 +61,8 @@ digraph GG {
   openssl [shape=diamond];
   openssl -> opensslasm;
   opensslasm [shape=diamond];
-  wx [shape=diamond];
-  wxx [shape=diamond];
-  wxx -> wx;
   yasm [shape=box];
   zmqpp [shape=diamond];
 }
-depgraph_d417109c7c23c46bd403690509d8bfc7
+depgraph_4f4c90a9bb15c72bd19adc16a09e32fb
 </details>
