@@ -12,5 +12,11 @@
         "XP_BUILD_VERBOSE": "ON"
       }
     }
+  ],
+  "buildPresets": [
+    {
+      "name": "build-base",
+      "hidden": true
+    }
   ]
 }
