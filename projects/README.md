@@ -12,7 +12,6 @@
 |[libgit2](https://libgit2.github.com/ 'libgit2 website')|[open](https://github.com/libgit2/libgit2/blob/master/README.md#license 'GPL2 with linking exception')|portable, pure C implementation of the Git core methods|1.3.0|[repo](https://github.com/libgit2/libgit2 'libgit2 repo on github')|[diff](https://github.com/externpro/libgit2/compare/libgit2:v1.3.0...xp1.3.0 'patch/diff')|
 |[libssh2](http://www.libssh2.org/ 'libssh2 website')|[open](http://www.libssh2.org/license.html 'BSD 3-Clause License - https://www.openhub.net/licenses/BSD-3-Clause')|client-side C library implementing SSH2 protocol|1.9.0|[repo](https://github.com/libssh2/libssh2 'libssh2 repo on github')|[diff](https://github.com/externpro/libssh2/compare/libssh2:libssh2-1.9.0...xp-1.9.0 'patch/diff')|
 |[Lua](http://www.lua.org/ 'Lua website')|[open](http://www.lua.org/license.html 'MIT license')|a powerful, fast, lightweight, embeddable scripting language|5.2.3|[repo](https://github.com/LuaDist/lua 'lua repo on github')|[diff](https://github.com/externpro/lua/compare/LuaDist:5.2.3...xp5.2.3 'patch/diff')|
-|[OpenH264](http://www.openh264.org/ 'OpenH264 website')|[open](http://www.openh264.org/faq.html 'Two-Clause BSD license')|a codec library which supports H.264 encoding and decoding|1.4.0|[repo](https://github.com/cisco/openh264 'openh264 repo on github')|[diff](https://github.com/externpro/openh264/compare/cisco:v1.4.0...xp1.4.0 'patch/diff')|
 |[OpenSSL](http://www.openssl.org/ 'OpenSSL website')|[open](http://www.openssl.org/source/license.html 'OpenSSL, SSLeay License: BSD-style')|Cryptography and SSL/TLS Toolkit|1.1.1l|[repo](https://github.com/openssl/openssl 'openssl repo on github')|[diff](https://github.com/externpro/openssl/compare/openssl:OpenSSL_1_1_1l...xp_1_1_1l 'patch/diff')|
 |[protobuf](https://developers.google.com/protocol-buffers/ 'Protocol Buffers website')|[open](https://github.com/protocolbuffers/protobuf/blob/v3.14.0/LICENSE '3-clause BSD license')|language-neutral, platform-neutral extensible mechanism for serializing structured data|3.14.0|[repo](https://github.com/protocolbuffers/protobuf 'protobuf repo on github')|[diff](https://github.com/externpro/protobuf/compare/protocolbuffers:v3.14.0...xp3.14.0 'patch/diff')|
 |[RapidXml](http://rapidxml.sourceforge.net/ 'RapidXml on sourceforge')|[open](http://rapidxml.sourceforge.net/license.txt 'Boost Software License -or- The MIT License')|fast XML parser|1.13|[repo](https://github.com/externpro/rapidxml 'rapidxml repo on github')|[diff](https://github.com/externpro/rapidxml/compare/v1.13...xp1.13 'patch/diff')|
@@ -32,10 +31,10 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_053f9b011df5ef46b4dcb91666de759d?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_5eb20dc6cfc8475b4568f70d4327ba05?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_053f9b011df5ef46b4dcb91666de759d
+depgraph_5eb20dc6cfc8475b4568f70d4327ba05
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
@@ -50,13 +49,11 @@ digraph GG {
   libgit2 -> libssh2;
   libssh2 [shape=diamond];
   libssh2 -> openssl;
-  openh264 [shape=diamond];
-  openh264 -> yasm;
   openssl [shape=diamond];
   openssl -> opensslasm;
   opensslasm [shape=diamond];
   yasm [shape=box];
   zmqpp [shape=diamond];
 }
-depgraph_053f9b011df5ef46b4dcb91666de759d
+depgraph_5eb20dc6cfc8475b4568f70d4327ba05
 </details>
