@@ -16,7 +16,6 @@
 |[protobuf](https://developers.google.com/protocol-buffers/ 'Protocol Buffers website')|[open](https://github.com/protocolbuffers/protobuf/blob/v3.14.0/LICENSE '3-clause BSD license')|language-neutral, platform-neutral extensible mechanism for serializing structured data|3.14.0|[repo](https://github.com/protocolbuffers/protobuf 'protobuf repo on github')|[diff](https://github.com/externpro/protobuf/compare/protocolbuffers:v3.14.0...xp3.14.0 'patch/diff')|
 |[RapidXml](http://rapidxml.sourceforge.net/ 'RapidXml on sourceforge')|[open](http://rapidxml.sourceforge.net/license.txt 'Boost Software License -or- The MIT License')|fast XML parser|1.13|[repo](https://github.com/externpro/rapidxml 'rapidxml repo on github')|[diff](https://github.com/externpro/rapidxml/compare/v1.13...xp1.13 'patch/diff')|
 |[shapelib](http://shapelib.maptools.org/ 'Shapefile C Library website')|[open](http://shapelib.maptools.org/license.html 'MIT Style -or- LGPL')|reading, writing, updating ESRI Shapefiles|1.2.10|[repo](https://github.com/externpro/shapelib 'forked shapelib repo on github')|[diff](https://github.com/externpro/shapelib/compare/v1.2.10...xp1.2.10 'patch/diff')|
-|[yasm](http://yasm.tortall.net/ 'yasm website')|[open](https://github.com/yasm/yasm/blob/v1.3.0/COPYING 'new BSD license')|assembler and disassembler for the Intel x86 architecture|1.3.0|[repo](https://github.com/yasm/yasm 'yasm repo on github')|[diff](https://github.com/externpro/yasm/compare/yasm:v1.3.0...xp1.3.0 'patch/diff')|
 |[zmqpp](https://zeromq.github.io/zmqpp/ 'zmqpp website')|[open](https://github.com/zeromq/zmqpp/blob/develop/LICENSE 'Mozilla Public License 2.0')|high-level binding for libzmq|21.07.09|[repo](https://github.com/zeromq/zmqpp 'zeromq/zmqpp repo on github')|[diff](https://github.com/externpro/zmqpp/compare/zeromq:ba4230d5d03d29ced9ca788e3bd1095477db08ae...xp21.07.09 'patch/diff')|
 
 ## subprojects
@@ -31,10 +30,10 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_5eb20dc6cfc8475b4568f70d4327ba05?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_46b0b942d084f37f98841a735ffbd279?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_5eb20dc6cfc8475b4568f70d4327ba05
+depgraph_46b0b942d084f37f98841a735ffbd279
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
@@ -52,8 +51,7 @@ digraph GG {
   openssl [shape=diamond];
   openssl -> opensslasm;
   opensslasm [shape=diamond];
-  yasm [shape=box];
   zmqpp [shape=diamond];
 }
-depgraph_5eb20dc6cfc8475b4568f70d4327ba05
+depgraph_46b0b942d084f37f98841a735ffbd279
 </details>
