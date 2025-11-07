@@ -4,7 +4,6 @@
 |-------|-------|-----------|-------|----------|----------|
 |[ActiveMQ-CPP](http://activemq.apache.org/cms/ 'ActiveMQ CMS website')|[open](http://www.apache.org/licenses/LICENSE-2.0.html 'Apache 2.0')|ActiveMQ C++ Messaging Service (CMS) client library|3.9.5|[repo](https://github.com/apache/activemq-cpp 'activemq-cpp repo on github')|[diff](https://github.com/externpro/activemq-cpp/compare/apache:activemq-cpp-3.9.5...xp-3.9.5 'patch/diff')|
 |[c-ares](http://c-ares.haxx.se/ 'c-ares website')|[open](http://c-ares.haxx.se/license.html 'c-ares license: MIT license')|C library for asynchronous DNS requests (including name resolves)|1.18.1|[repo](https://github.com/c-ares/c-ares 'c-ares repo on github')|[diff](https://github.com/externpro/c-ares/compare/c-ares:cares-1_18_1...xp-1_18_1 'patch/diff')|
-|[cppzmq](https://zeromq.org/ 'ZeroMQ website')|[open](http://wiki.zeromq.org/area:licensing 'GNU LGPL plus static linking exception')|header-only C++ binding for libzmq|4.7.1|[repo](https://github.com/zeromq/cppzmq 'zeromq/cppzmq repo on github')|[diff](https://github.com/externpro/cppzmq/compare/zeromq:v4.7.1...xp4.7.1 'patch/diff')|
 |[cURL](http://curl.haxx.se/libcurl/ 'libcurl website')|[open](http://curl.haxx.se/docs/copyright.html 'curl license: MIT/X derivate license')|the multiprotocol file transfer library|7.80.0|[repo](https://github.com/curl/curl 'curl repo on github')|[diff](https://github.com/externpro/curl/compare/curl:curl-7_80_0...xp-7_80_0 'patch/diff')|
 |[Expat](https://libexpat.github.io 'Expat website')|[open](https://github.com/libexpat/libexpat/blob/R_2_2_5/expat/COPYING 'Expat License (MIT/X Consortium license)')|a stream-oriented XML parser library written in C|2.2.5|[repo](https://github.com/libexpat/libexpat 'libexpat repo on github')|[diff](https://github.com/externpro/libexpat/compare/libexpat:R_2_2_5...xp2.2.5 'patch/diff')|
 |[GLEW](http://glew.sourceforge.net 'GLEW on sourceforge.net')|[open](http://glew.sourceforge.net/credits.html 'Modified BSD, Mesa 3-D (MIT), and Khronos (MIT)')|The OpenGL Extension Wrangler Library|1.13.0|[repo](https://github.com/nigels-com/glew 'GLEW repo on github')|[diff](https://github.com/externpro/glew/compare/nigels-com:glew-1.13.0...xp-1.13.0 'patch/diff')|
@@ -28,16 +27,15 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_46b0b942d084f37f98841a735ffbd279?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_2c5d21c993f58d6376721f78062889b9?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_46b0b942d084f37f98841a735ffbd279
+depgraph_2c5d21c993f58d6376721f78062889b9
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
   activemqcpp -> openssl;
   cares [label="c-ares" shape=diamond];
-  cppzmq [shape=diamond];
   curl [shape=diamond];
   curl -> libssh2;
   curl -> cares;
@@ -51,5 +49,5 @@ digraph GG {
   opensslasm [shape=diamond];
   zmqpp [shape=diamond];
 }
-depgraph_46b0b942d084f37f98841a735ffbd279
+depgraph_2c5d21c993f58d6376721f78062889b9
 </details>
