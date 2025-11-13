@@ -9,7 +9,6 @@
 |[libgit2](https://libgit2.github.com/ 'libgit2 website')|[open](https://github.com/libgit2/libgit2/blob/master/README.md#license 'GPL2 with linking exception')|portable, pure C implementation of the Git core methods|1.3.0|[repo](https://github.com/libgit2/libgit2 'libgit2 repo on github')|[diff](https://github.com/externpro/libgit2/compare/libgit2:v1.3.0...xp1.3.0 'patch/diff')|
 |[libssh2](http://www.libssh2.org/ 'libssh2 website')|[open](http://www.libssh2.org/license.html 'BSD 3-Clause License - https://www.openhub.net/licenses/BSD-3-Clause')|client-side C library implementing SSH2 protocol|1.9.0|[repo](https://github.com/libssh2/libssh2 'libssh2 repo on github')|[diff](https://github.com/externpro/libssh2/compare/libssh2:libssh2-1.9.0...xp-1.9.0 'patch/diff')|
 |[Lua](http://www.lua.org/ 'Lua website')|[open](http://www.lua.org/license.html 'MIT license')|a powerful, fast, lightweight, embeddable scripting language|5.2.3|[repo](https://github.com/LuaDist/lua 'lua repo on github')|[diff](https://github.com/externpro/lua/compare/LuaDist:5.2.3...xp5.2.3 'patch/diff')|
-|[OpenSSL](http://www.openssl.org/ 'OpenSSL website')|[open](http://www.openssl.org/source/license.html 'OpenSSL, SSLeay License: BSD-style')|Cryptography and SSL/TLS Toolkit|1.1.1l|[repo](https://github.com/openssl/openssl 'openssl repo on github')|[diff](https://github.com/externpro/openssl/compare/openssl:OpenSSL_1_1_1l...xp_1_1_1l 'patch/diff')|
 |[protobuf](https://developers.google.com/protocol-buffers/ 'Protocol Buffers website')|[open](https://github.com/protocolbuffers/protobuf/blob/v3.14.0/LICENSE '3-clause BSD license')|language-neutral, platform-neutral extensible mechanism for serializing structured data|3.14.0|[repo](https://github.com/protocolbuffers/protobuf 'protobuf repo on github')|[diff](https://github.com/externpro/protobuf/compare/protocolbuffers:v3.14.0...xp3.14.0 'patch/diff')|
 
 ## subprojects
@@ -20,18 +19,16 @@
 |jpegxp|[jpeglossy12](http://libjpeg.sourceforge.net/ 'libjpeg on sourceforge')|lossy 12-bit encode and decode|6b|[repo](https://github.com/externpro/libjpeg 'forked libjpeg repo on github')|[diff](https://github.com/externpro/libjpeg/compare/09a4003...lossy12.6b 'patch/diff')|
 |jpegxp|[jpeglossy8](http://libjpeg.sourceforge.net/ 'libjpeg on sourceforge')|lossy 8-bit encode and decode|6b|[repo](https://github.com/externpro/libjpeg 'forked libjpeg repo on github')|[diff](https://github.com/externpro/libjpeg/compare/09a4003...lossy8.6b 'patch/diff')|
 |lua|[LuaBridge](http://vinniefalco.github.io/LuaBridge/Manual.html 'LuaBridge Reference Manual')|a lightweight, dependency-free library for binding Lua to C++|2.5|[repo](https://github.com/vinniefalco/LuaBridge 'LuaBridge repo on github')|none|
-|openssl|[opensslasm](https://github.com/externpro/opensslasm 'opensslasm project on github')|openssl assembly|1.1.1l|[repo](https://github.com/externpro/opensslasm 'opensslasm repo on github')|none|
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_742fc01f987f6c7d0d17d5509ce29f4a?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_1ac303504eb3d7329baa07e6d030da3f?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_742fc01f987f6c7d0d17d5509ce29f4a
+depgraph_1ac303504eb3d7329baa07e6d030da3f
 digraph GG {
   node [fontsize=12];
   activemqcpp [shape=diamond];
-  activemqcpp -> openssl;
   cares [label="c-ares" shape=diamond];
   curl [shape=diamond];
   curl -> libssh2;
@@ -39,10 +36,6 @@ digraph GG {
   libgit2 [shape=diamond];
   libgit2 -> libssh2;
   libssh2 [shape=diamond];
-  libssh2 -> openssl;
-  openssl [shape=diamond];
-  openssl -> opensslasm;
-  opensslasm [shape=diamond];
 }
-depgraph_742fc01f987f6c7d0d17d5509ce29f4a
+depgraph_1ac303504eb3d7329baa07e6d030da3f
 </details>
