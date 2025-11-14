@@ -10,7 +10,7 @@ set(PRO_LIBGIT2
   LICENSE "open" "${REPO}/blob/master/README.md#license" "GPL2 with linking exception"
   DESC "portable, pure C implementation of the Git core methods"
   REPO "repo" ${REPO} "libgit2 repo on github"
-  GRAPH BUILD_DEPS libssh2
+  GRAPH
   VER ${VER}
   GIT_ORIGIN ${FORK}
   GIT_UPSTREAM ${REPO}
