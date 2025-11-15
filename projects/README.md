@@ -2,7 +2,6 @@
 
 |project|license|description|version|repository|patch/diff|
 |-------|-------|-----------|-------|----------|----------|
-|[c-ares](http://c-ares.haxx.se/ 'c-ares website')|[open](http://c-ares.haxx.se/license.html 'c-ares license: MIT license')|C library for asynchronous DNS requests (including name resolves)|1.18.1|[repo](https://github.com/c-ares/c-ares 'c-ares repo on github')|[diff](https://github.com/externpro/c-ares/compare/c-ares:cares-1_18_1...xp-1_18_1 'patch/diff')|
 |[cURL](http://curl.haxx.se/libcurl/ 'libcurl website')|[open](http://curl.haxx.se/docs/copyright.html 'curl license: MIT/X derivate license')|the multiprotocol file transfer library|7.80.0|[repo](https://github.com/curl/curl 'curl repo on github')|[diff](https://github.com/externpro/curl/compare/curl:curl-7_80_0...xp-7_80_0 'patch/diff')|
 |[jpegxp](http://www.ijg.org/ 'Independent JPEG Group website')|[open](https://github.com/externpro/libjpeg/blob/upstream/README 'libjpeg: see LEGAL ISSUES, in README (no specific license mentioned)')|JPEG codec with mods for Lossless, 12-bit lossy (XP)|24.01|[repo](https://github.com/externpro/jpegxp 'jpegxp repo on github')|[diff](https://github.com/externpro/jpegxp/compare/jxp.240125...jxp 'patch/diff')|
 |[Lua](http://www.lua.org/ 'Lua website')|[open](http://www.lua.org/license.html 'MIT license')|a powerful, fast, lightweight, embeddable scripting language|5.2.3|[repo](https://github.com/LuaDist/lua 'lua repo on github')|[diff](https://github.com/externpro/lua/compare/LuaDist:5.2.3...xp5.2.3 'patch/diff')|
@@ -19,15 +18,13 @@
 
 ## dependency graph
 
-![deps.dot graph](https://g.gravizo.com/source/depgraph_9100fac634f7ef287c214d2e4918d5ad?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
+![deps.dot graph](https://g.gravizo.com/source/depgraph_e8bfb7a87dccbab63c58b30bdb4f6092?https%3A%2F%2Fraw.githubusercontent.com%2Fexternpro%2Fexdlpro%2Fdev%2Fprojects%2FREADME.md)
 <details>
 <summary></summary>
-depgraph_9100fac634f7ef287c214d2e4918d5ad
+depgraph_e8bfb7a87dccbab63c58b30bdb4f6092
 digraph GG {
   node [fontsize=12];
-  cares [label="c-ares" shape=diamond];
   curl [shape=diamond];
-  curl -> cares;
 }
-depgraph_9100fac634f7ef287c214d2e4918d5ad
+depgraph_e8bfb7a87dccbab63c58b30bdb4f6092
 </details>
